@@ -1,4 +1,5 @@
-﻿using CompanyAPIs.Helpers;
+﻿using CompanyAPIs.Data;
+using CompanyAPIs.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -15,13 +16,15 @@ namespace CompanyAPIs.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly JWT _jwt;
+        private readonly ApplicationDbContext _applicationDbContext;
 
         //Constructor to Use it to check on the User found or no 
-        public AuthService(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt)
+        public AuthService(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt, ApplicationDbContext applicationDbContext)
         {
             _userManager = userManager;
             _jwt = jwt.Value;
             _roleManager = roleManager;
+            _applicationDbContext = applicationDbContext;
 
         }
 
@@ -33,6 +36,7 @@ namespace CompanyAPIs.Services
             if (await _userManager.FindByNameAsync(model.UserName) is not null)
                 return new AuthModel { Message = "UserName ia already registered!" };
 
+
             var user = new ApplicationUser
             {
                 UserName = model.UserName,
@@ -40,6 +44,7 @@ namespace CompanyAPIs.Services
                 FirstName = model.FirstName,
                 LastName = model.LastName
             };
+
 
             var result = await _userManager.CreateAsync(user , model.Password );
             if (!result.Succeeded)
@@ -53,17 +58,31 @@ namespace CompanyAPIs.Services
                 return new AuthModel { Message = errors };
 
             }
+            if (model.IsEmployee)
+            {
+                await _userManager.AddToRoleAsync(user, "Employee");
 
-            await _userManager.AddToRoleAsync(user, "User");
+
+
+            }
+            else
+            {
+                await _userManager.AddToRoleAsync(user, "user");
+
+            }
+
 
             var jwtSecurityToken = await CreateJwtToken(user);
+
+
+            var rolesList = await _userManager.GetRolesAsync(user);
 
             return new AuthModel
             {
                 Email = user.Email,
                 ExpiresOn = jwtSecurityToken.ValidTo,
                 IsAuthenticated = true,
-                Roles = new List<string> {"user"},
+                Roles = rolesList.FirstOrDefault(),
                 Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
                 UserName = user.UserName
             };
@@ -122,7 +141,7 @@ namespace CompanyAPIs.Services
             authModel.Email = user.Email;
             authModel.UserName = user.UserName;
             authModel.ExpiresOn = jwtSecurityToken.ValidTo;
-            authModel.Roles = rolesList.ToList();
+            authModel.Roles = rolesList.FirstOrDefault();
 
             return authModel;
         }

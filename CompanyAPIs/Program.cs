@@ -13,6 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using HRCom.Domain.Contracts.Interfaces.Services;
+using HRCom.Utilities.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +41,8 @@ builder.Services.Configure<DataProtectionTokenProviderOptions>(opts=>opts.TokenL
 //Add Auth Interface and Auth Service Class
 
 builder.Services.AddScoped<IAuthService , AuthService>();
+builder.Services.AddScoped<IOperationsService , OperationService>();
+builder.Services.AddScoped<IUserDataProvider , UserDataProvider>();
 
 
 //Add Authentication

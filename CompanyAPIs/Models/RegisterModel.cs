@@ -21,5 +21,9 @@ namespace CompanyAPIs.Models
         
         [Required,StringLength(256)]
         public string Password { get; set; }
+
+
+        [Required]
+        public bool IsEmployee { get; set; }
     }
 }

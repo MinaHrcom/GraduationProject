@@ -1,0 +1,1583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BODY" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EMAIL_ALREADY_SUBSCRIBED" xml:space="preserve">
+    <value>This email is already subscribed</value>
+  </data>
+  <data name="SUBJECT" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="INVALID_EMAIL_PASSWORD" xml:space="preserve">
+    <value>The email and password you entered are not correct</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="TRY_AGAIN_LATER_ERROR" xml:space="preserve">
+    <value>Some error has occurred, please try again later</value>
+  </data>
+  <data name="{0}_IS_NOT_VALID_FORMAT" xml:space="preserve">
+    <value>{0} is not valid format</value>
+  </data>
+  <data name="{0}_IS_REQUIRED" xml:space="preserve">
+    <value>{0} is required</value>
+  </data>
+  <data name="EMAIL_CONFIRMATION_ERROR" xml:space="preserve">
+    <value>Please confirm your email first</value>
+  </data>
+  <data name="DOMAIN_REGISTRED_BEFORE" xml:space="preserve">
+    <value>This domain is registered before</value>
+  </data>
+  <data name="EMAIL_REGISTRED_BEFORE" xml:space="preserve">
+    <value>This email is registered before</value>
+  </data>
+  <data name="INVALID_PHONE_NUMBER" xml:space="preserve">
+    <value>Invalid phone number</value>
+  </data>
+  <data name="CONFIRM_PASSWORD" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="PASSWORD_NOT_MATCH" xml:space="preserve">
+    <value>Password and confirm password don’t match</value>
+  </data>
+  <data name="TOKEN" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="ACCOUNT_SUSPENDED" xml:space="preserve">
+    <value>Your account is deactivated, please check with the system admin</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Token is invalid</value>
+  </data>
+  <data name="PasswordRequiresDigit" xml:space="preserve">
+    <value>Password must be a mixture of letters and numbers</value>
+  </data>
+  <data name="PasswordRequiresLower" xml:space="preserve">
+    <value>Password must be a mixture of both uppercase and lowercase letters</value>
+  </data>
+  <data name="PasswordRequiresUpper" xml:space="preserve">
+    <value>Password must be a mixture of both uppercase and lowercase letters</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>Password must be Min. 8 characters</value>
+  </data>
+  <data name="DOMAIN" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="FIRSTNAME" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="LASTNAME" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="{0}INVALID_DOMAIN" xml:space="preserve">
+    <value>{0} Allow English only, spacing and special characters are not allowed </value>
+  </data>
+  <data name="{0}_EXCEED_MAX_LENGTH" xml:space="preserve">
+    <value>{0} exceed max length </value>
+  </data>
+  <data name="COMPANYNAMEAR" xml:space="preserve">
+    <value>Company name (Ar)</value>
+  </data>
+  <data name="COMPANYNAMEEN" xml:space="preserve">
+    <value>Company name (En)</value>
+  </data>
+  <data name="PasswordValidation" xml:space="preserve">
+    <value>Invalid password. A strong password should follow these rules: 
+Min. 8 characters and 12 characters Max. 
+A mixture of both uppercase and lowercase letters
+A mixture of letters and numbers</value>
+  </data>
+  <data name="WAIT_ONE_MINUTE" xml:space="preserve">
+    <value>Wait one minute before send again</value>
+  </data>
+  <data name="DUPLICATE_NAME_AR" xml:space="preserve">
+    <value>Duplicate arabic name</value>
+  </data>
+  <data name="DUPLICATE_NAME_EN" xml:space="preserve">
+    <value>Duplicate english name</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="JOB_ROLE_NAME_DUPLICATED" xml:space="preserve">
+    <value>This job role already exists, please choose another name</value>
+  </data>
+  <data name="NAME_AR" xml:space="preserve">
+    <value>Arabic name</value>
+  </data>
+  <data name="NAME_EN" xml:space="preserve">
+    <value>English name</value>
+  </data>
+  <data name="{0}_MAX_LENGTH_IS_{1}" xml:space="preserve">
+    <value>{0} max length is {1}</value>
+  </data>
+  <data name="{0}_ONLY_AR_LETTERS" xml:space="preserve">
+    <value>{0} must be only arabic letters</value>
+  </data>
+  <data name="{0}_ONLY_EN_LETTERS" xml:space="preserve">
+    <value>{0} must be only english letters</value>
+  </data>
+  <data name="DATA_NOT_FOUND" xml:space="preserve">
+    <value>Data not found</value>
+  </data>
+  <data name="COMPANY_NOT_EXIST" xml:space="preserve">
+    <value>There is no registered company with this domain</value>
+  </data>
+  <data name="INTERNAL_SERVER_ERROR" xml:space="preserve">
+    <value>Some error has occured, please contact administration</value>
+  </data>
+  <data name="CITY_NOT_BELONG_TO_COUNTRY" xml:space="preserve">
+    <value>City does't belong to this country</value>
+  </data>
+  <data name="ERROR_CONFIRMING_EMAIL" xml:space="preserve">
+    <value>Error while confirming your email </value>
+  </data>
+  <data name="EMAIL_ALREADY_CONFIRMED" xml:space="preserve">
+    <value>Email already confirmed </value>
+  </data>
+  <data name="NO_PERMISSION_SELECTED" xml:space="preserve">
+    <value>The job role must have at least one permission</value>
+  </data>
+  <data name="PERMISSIONS" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="INVALID_IMAGE_FORMAT" xml:space="preserve">
+    <value>Invalid Image Format</value>
+  </data>
+  <data name="INVALID_IMAGE_SIZE" xml:space="preserve">
+    <value>File size should not exceed 10MB</value>
+  </data>
+  <data name="JOB_ROLE" xml:space="preserve">
+    <value>Job role</value>
+  </data>
+  <data name="DUPLICATE_EMAIL" xml:space="preserve">
+    <value>This email is created before</value>
+  </data>
+  <data name="NO_JOB_ROLE_SELECTED" xml:space="preserve">
+    <value>You must select at least one job role</value>
+  </data>
+  <data name="NOT_VALID_JOB_ROLES" xml:space="preserve">
+    <value>Not valid job roles</value>
+  </data>
+  <data name="MAXIMUM_SALARY_SHOULD_BE_BIGGER_THAN_MINIMUM" xml:space="preserve">
+    <value>Maximum salary should be bigger than Minimum</value>
+  </data>
+  <data name="CURRENCY" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CURRENCY_NOT_EXIST_IN_DATABASE" xml:space="preserve">
+    <value>Cureency doesn't exist in data base</value>
+  </data>
+  <data name="GRADENAMEAR" xml:space="preserve">
+    <value>Salary Grade (Ar)</value>
+  </data>
+  <data name="GRADENAMEEN" xml:space="preserve">
+    <value>Salary Grade (En)</value>
+  </data>
+  <data name="INVALIDMAXSALARYNUMBER" xml:space="preserve">
+    <value>Max Salary is invalid</value>
+  </data>
+  <data name="INVALIDMAXSALARYRANG" xml:space="preserve">
+    <value>Max Salary must between 0.00 and 99999999</value>
+  </data>
+  <data name="INVALIDMINSALARYNUMBER" xml:space="preserve">
+    <value>Min Salary is invalid</value>
+  </data>
+  <data name="INVALIDMINSALARYRANG" xml:space="preserve">
+    <value>Min Salary must between 0.00 and 99999999</value>
+  </data>
+  <data name="MAXSALARY" xml:space="preserve">
+    <value>Max Salary</value>
+  </data>
+  <data name="MINSALARY" xml:space="preserve">
+    <value>Min Salary</value>
+  </data>
+  <data name="BRANCH_NAME_DUBLICATION" xml:space="preserve">
+    <value>This branch name already exists, please choose another name</value>
+  </data>
+  <data name="SALARY_NAME-DUBLICATION" xml:space="preserve">
+    <value>Salary grade name exists before</value>
+  </data>
+  <data name="INVALID_EMAIL" xml:space="preserve">
+    <value>Invalid email</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Activate status</value>
+  </data>
+  <data name="NOT_VALID_ACTIONS" xml:space="preserve">
+    <value>Not valid actions</value>
+  </data>
+  <data name="ROLE_HAS_USERS" xml:space="preserve">
+    <value>Sorry, you can't delete this job role because there are assigned agents to it.</value>
+  </data>
+  <data name="JOBTITLENAMEAR" xml:space="preserve">
+    <value>Job Title (Ar)</value>
+  </data>
+  <data name="JOBTITLENAMEEN" xml:space="preserve">
+    <value>Job Title(En)</value>
+  </data>
+  <data name="JOB_TITLE_NAME_DUBLICATION" xml:space="preserve">
+    <value>This position already exists, please choose another name</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="NOT_VALID_JOB_REQUISITION_DATA" xml:space="preserve">
+    <value>Not valid that item can be hide and mandatory </value>
+  </data>
+  <data name="NOT_VALID_JOB_REQUISITION_ITEM" xml:space="preserve">
+    <value>Not valid job requisition item</value>
+  </data>
+  <data name="NOT_VALID_JOB_REQUISITION_VALUE" xml:space="preserve">
+    <value>only Company brief that contain value</value>
+  </data>
+  <data name="JOB_REQUISITION_EMPTY_MODEL" xml:space="preserve">
+    <value>job requisition model must contain at least one item</value>
+  </data>
+  <data name="NOT_VALID_SALARY_GRADE" xml:space="preserve">
+    <value>Not valid salary grade</value>
+  </data>
+  <data name="VALUE" xml:space="preserve">
+    <value>value</value>
+  </data>
+  <data name="BRANCH" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="JOB_TITLE" xml:space="preserve">
+    <value>Job title</value>
+  </data>
+  <data name="JOB_TYPE" xml:space="preserve">
+    <value>Job type</value>
+  </data>
+  <data name="JOINING_DATE" xml:space="preserve">
+    <value>Joining date</value>
+  </data>
+  <data name="NUM_OF_OPENINGS" xml:space="preserve">
+    <value>Number of openings</value>
+  </data>
+  <data name="SALARY_GRADE" xml:space="preserve">
+    <value>Salary grade</value>
+  </data>
+  <data name="{0}_ONLTY_NUMBER" xml:space="preserve">
+    <value>{0} must be number</value>
+  </data>
+  <data name="INVALID_BRANCH" xml:space="preserve">
+    <value>Invalid Branch</value>
+  </data>
+  <data name="INVALID_JOB_TITLE" xml:space="preserve">
+    <value>Invalid job title</value>
+  </data>
+  <data name="INVALID_JOB_TYPE" xml:space="preserve">
+    <value>Invalid job type</value>
+  </data>
+  <data name="INVALID_JOINING_DATE" xml:space="preserve">
+    <value>Joining date must be greater than today</value>
+  </data>
+  <data name="INVALID_NUM_OF_OPENINGS" xml:space="preserve">
+    <value>Number of openings must be greater than 0</value>
+  </data>
+  <data name="INVALID_SALARY_GRADE" xml:space="preserve">
+    <value>Invalid salary grade</value>
+  </data>
+  <data name="COMPANY_BRIEF_REQUIRED" xml:space="preserve">
+    <value>Company Brief is required</value>
+  </data>
+  <data name="INVALIDWEIGHT" xml:space="preserve">
+    <value>weight must be between 0 and 100</value>
+  </data>
+  <data name="INVALID_JOB_POST_REQUEST" xml:space="preserve">
+    <value>Invalid Job Post Request</value>
+  </data>
+  <data name="INVALID_NATIONALITY" xml:space="preserve">
+    <value>Invalid Nationality</value>
+  </data>
+  <data name="INVALID_RESIDENCY" xml:space="preserve">
+    <value>Invalid residency</value>
+  </data>
+  <data name="JOBDESCRIPTIONNAMEAR" xml:space="preserve">
+    <value>Job Description (Ar)</value>
+  </data>
+  <data name="JOBDESCRIPTIONNAMEEN" xml:space="preserve">
+    <value>Job Description (En)</value>
+  </data>
+  <data name="JOBSPECIFICATION" xml:space="preserve">
+    <value>Job Specification</value>
+  </data>
+  <data name="MaxAgeMustBeGreaterThanMinAge" xml:space="preserve">
+    <value>Min age should be less than max-age</value>
+  </data>
+  <data name="TemplateNameDublication" xml:space="preserve">
+    <value>The template name must be unique</value>
+  </data>
+  <data name="ThereIsDublicationInEducation" xml:space="preserve">
+    <value>You can't repeat the college with its degree</value>
+  </data>
+  <data name="ThereIsDublicationInLanguage" xml:space="preserve">
+    <value>You can't repeat the language with its proficiency level</value>
+  </data>
+  <data name="VALUEAR" xml:space="preserve">
+    <value>Company Brief (ar)</value>
+  </data>
+  <data name="VALUEEN" xml:space="preserve">
+    <value>Company Brief (en)</value>
+  </data>
+  <data name="CONFIRM_NEW_PASSWORD" xml:space="preserve">
+    <value>Confirm new password</value>
+  </data>
+  <data name="CURRENT_PASSWORD" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="EMAIL_REGISTRED_BEFORE_OTHER_COMPANY" xml:space="preserve">
+    <value>This is email is registered for another company</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>Incorrect password</value>
+  </data>
+  <data name="NEW_PASSWORD" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="PasswordMismatch" xml:space="preserve">
+    <value>Incorrect password</value>
+  </data>
+  <data name="AnswerMustGreateThan2Answer" xml:space="preserve">
+    <value>Question answer must greater than 2 answers</value>
+  </data>
+  <data name="AnswerOfQuestionIsDublication" xml:space="preserve">
+    <value>you can't repeat quetion answer</value>
+  </data>
+  <data name="MustEnterWeightIfItemIsPerfered" xml:space="preserve">
+    <value>Enter weight in case item type is perferred</value>
+  </data>
+  <data name="TotalWeightExcced100" xml:space="preserve">
+    <value>sum of weight must less than or equal 100</value>
+  </data>
+  <data name="EssayQuestionMustnotContainAnyAnswer" xml:space="preserve">
+    <value>Essay question must not contain any answers</value>
+  </data>
+  <data name="MustEnterQuestion" xml:space="preserve">
+    <value>Must enter question</value>
+  </data>
+  <data name="WeightMustGreaterThanZero" xml:space="preserve">
+    <value>Weight must be greater than 0</value>
+  </data>
+  <data name="ANSWERNAMEAR" xml:space="preserve">
+    <value>Answer (Ar)</value>
+  </data>
+  <data name="ANSWERNAMEEN" xml:space="preserve">
+    <value>Answer (En)</value>
+  </data>
+  <data name="QUESTIONNAMEAR" xml:space="preserve">
+    <value>Question Name (Ar)</value>
+  </data>
+  <data name="QUESTIONNAMEEN" xml:space="preserve">
+    <value>Question Name (En)</value>
+  </data>
+  <data name="SectionIsDublication" xml:space="preserve">
+    <value>The section name must be unique</value>
+  </data>
+  <data name="SECTIONNAMEAR" xml:space="preserve">
+    <value>Section Name (Ar)</value>
+  </data>
+  <data name="SECTIONNAMEEN" xml:space="preserve">
+    <value>Section Name (En)</value>
+  </data>
+  <data name="TEMPLATENAMEAR" xml:space="preserve">
+    <value>Template Name (Ar)</value>
+  </data>
+  <data name="TEMPLATENAMEEN" xml:space="preserve">
+    <value>Template Name (En)</value>
+  </data>
+  <data name="YesOrNoQuestionContainOnlyTwoAnswer" xml:space="preserve">
+    <value>Yes Or No Question Contain Only 2 Answers</value>
+  </data>
+  <data name="JOB_REQUEST_CAN_NOT_DELETED" xml:space="preserve">
+    <value>Job request can not be deleted</value>
+  </data>
+  <data name="AtLeastOneAnswer" xml:space="preserve">
+    <value>At least one answer</value>
+  </data>
+  <data name="JOB_REQUEST_IS_CLOSED" xml:space="preserve">
+    <value>Job request is closed</value>
+  </data>
+  <data name="JOB_REQUEST_IS_PUBLISHED" xml:space="preserve">
+    <value>Job request is already published</value>
+  </data>
+  <data name="DateMustBeNotIntersect" xml:space="preserve">
+    <value>The date answers must not intersect with each other</value>
+  </data>
+  <data name="InvalidAnswer" xml:space="preserve">
+    <value>Invalid Answer</value>
+  </data>
+  <data name="TimeMustNotBeIntersect" xml:space="preserve">
+    <value>The time answers must not intersect with each other</value>
+  </data>
+  <data name="DateToMustGreaterThanDateForm" xml:space="preserve">
+    <value>Date to must be greater than date from</value>
+  </data>
+  <data name="TimeToMustGreaterThanTimeForm" xml:space="preserve">
+    <value>Time to must be greater than time from</value>
+  </data>
+  <data name="JOB_TITLE_CATEGORY" xml:space="preserve">
+    <value>Job title category</value>
+  </data>
+  <data name="NOT_VALID_JOB_TITLE_CATEGORY" xml:space="preserve">
+    <value>Not valid job title category</value>
+  </data>
+  <data name="ContractTypeIsRequired" xml:space="preserve">
+    <value>Contract Type Is Required</value>
+  </data>
+  <data name="MustEnterDescription" xml:space="preserve">
+    <value>Must Enter Description</value>
+  </data>
+  <data name="COUNTRY_CODE" xml:space="preserve">
+    <value>Country code</value>
+  </data>
+  <data name="COUNTRY_CODE_NUMBER" xml:space="preserve">
+    <value>Country code number</value>
+  </data>
+  <data name="DATE_OF_BIRTH" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="InvalidGender" xml:space="preserve">
+    <value>Invalid gender</value>
+  </data>
+  <data name="InvalidMaritalStatus" xml:space="preserve">
+    <value>Invalid marital status</value>
+  </data>
+  <data name="MARITAL_STATUS" xml:space="preserve">
+    <value>Marital status</value>
+  </data>
+  <data name="NOT_VALID_COUNTRY" xml:space="preserve">
+    <value>Not valid country</value>
+  </data>
+  <data name="RESIDENCY" xml:space="preserve">
+    <value>Residency</value>
+  </data>
+  <data name="RESIDENCY_AR" xml:space="preserve">
+    <value>Residency name ar</value>
+  </data>
+  <data name="RESIDENCY_EN" xml:space="preserve">
+    <value>Residency name en</value>
+  </data>
+  <data name="FILE" xml:space="preserve">
+    <value>file</value>
+  </data>
+  <data name="FILE_NAME" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="IMAGE" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="FILE_EXTENSION" xml:space="preserve">
+    <value>File extension</value>
+  </data>
+  <data name="COLLEGE" xml:space="preserve">
+    <value>College</value>
+  </data>
+  <data name="DEGREE" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="INVALID_COLLEGE" xml:space="preserve">
+    <value>Invalid college</value>
+  </data>
+  <data name="INVALID_DEGREE" xml:space="preserve">
+    <value>Invalid degree</value>
+  </data>
+  <data name="COMPANY_NAME" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>From date</value>
+  </data>
+  <data name="DUPLICATE_LANGUAGE" xml:space="preserve">
+    <value>Duplicate language</value>
+  </data>
+  <data name="ENGLISH_PROFICIENCY_LEVEL" xml:space="preserve">
+    <value>English proficiency level</value>
+  </data>
+  <data name="INVALID_ENGLISH_PROFICIENCY" xml:space="preserve">
+    <value>Invalid english proficiency level</value>
+  </data>
+  <data name="INVALID_LANGUAGE_PROFICIENCY" xml:space="preserve">
+    <value>Invalid language proficiency level</value>
+  </data>
+  <data name="INVALID_SKILL" xml:space="preserve">
+    <value>Invalid skill</value>
+  </data>
+  <data name="INVALID_GPA_OUT_OF" xml:space="preserve">
+    <value>Invalid GPA out of value</value>
+  </data>
+  <data name="INVALID_GPA" xml:space="preserve">
+    <value>Invalid GPA</value>
+  </data>
+  <data name="APPLIED_BEFORE" xml:space="preserve">
+    <value>You applied to this job before</value>
+  </data>
+  <data name="COMPLETE_SCREENING_QUESTIONS" xml:space="preserve">
+    <value>Please complete screening question first</value>
+  </data>
+  <data name="INVALID_QUESTION" xml:space="preserve">
+    <value>Invalid question</value>
+  </data>
+  <data name="INVALID_QUESTION_SECTION" xml:space="preserve">
+    <value>Invalid question section</value>
+  </data>
+  <data name="JOB_REQUEST_CLOSED" xml:space="preserve">
+    <value>Sorry this vacancy is closed and no longer available</value>
+  </data>
+  <data name="PROFILE_NOT_COMPLETE" xml:space="preserve">
+    <value>Please complete your profile to be able to apply to any vacancy</value>
+  </data>
+  <data name="USER_NOT_FOUND" xml:space="preserve">
+    <value>User not found</value>
+  </data>
+  <data name="CLOSING_DATE" xml:space="preserve">
+    <value>Closing date</value>
+  </data>
+  <data name="INVALID_WIZARD_VIEW" xml:space="preserve">
+    <value>Wizard is saved before</value>
+  </data>
+  <data name="LOGO_REQUIRED" xml:space="preserve">
+    <value>Logo is required</value>
+  </data>
+  <data name="REQUIRED_CATEGORY" xml:space="preserve">
+    <value>Job title category is required</value>
+  </data>
+  <data name="CHOOSE_OR_ADD_JOB_TITLE" xml:space="preserve">
+    <value>Choose or add job title</value>
+  </data>
+  <data name="Download_Sample_Sheet" xml:space="preserve">
+    <value>Please download the agents' sample first and then upload it with the desired agents</value>
+  </data>
+  <data name="Error_In_Excel" xml:space="preserve">
+    <value>Error in excel</value>
+  </data>
+  <data name="INVALID_EXCEL_EXTENSION" xml:space="preserve">
+    <value>Invalid extension file , Please download the agents' sample first and then upload it with the desired agents</value>
+  </data>
+  <data name="EXCEL_INVALID_File" xml:space="preserve">
+    <value>Invalid Excel File</value>
+  </data>
+  <data name="EXCEL_INVALID__SIZE" xml:space="preserve">
+    <value>Max size is 10MB</value>
+  </data>
+  <data name="EXCEL_DATA_REQUIRED" xml:space="preserve">
+    <value>Row {0} is skipped because the first name, last name , email and  job Role are required</value>
+  </data>
+  <data name="EXCEL_EXCEED_MAX_LENGTH" xml:space="preserve">
+    <value>Row {0} are skipped because the first and last name should not exceed 50 characters each</value>
+  </data>
+  <data name="EXCEL_INVALID_MAIL" xml:space="preserve">
+    <value>Row {0} are skipped because there were invalid emails</value>
+  </data>
+  <data name="EXCEL_MAIL_DUPLICATION" xml:space="preserve">
+    <value>Row {0} are skipped because there were repeated emails</value>
+  </data>
+  <data name="EXCEL_RECORDS_NUMBER" xml:space="preserve">
+    <value>The allowed number of records is 100 MAX</value>
+  </data>
+  <data name="INVALID_EDIT_FOR_APPROVAL_STATUS" xml:space="preserve">
+    <value>Can not edit this record</value>
+  </data>
+  <data name="INVALID_DELETE_FOR_APPROVAL_STATUS" xml:space="preserve">
+    <value>Can not delete this record</value>
+  </data>
+  <data name="DISAPPROVED_REASON" xml:space="preserve">
+    <value>Disapproved reason</value>
+  </data>
+  <data name="INVALID_POST_FOR_APPROVAL_STATUS" xml:space="preserve">
+    <value>Can not post this record</value>
+  </data>
+  <data name="INVALID_SALARY_SECTION" xml:space="preserve">
+    <value>The sum of the salary sections have to be less than 100%</value>
+  </data>
+  <data name="INVALID_SALARY_SECTION_NAME" xml:space="preserve">
+    <value>You can't repeat the salary options</value>
+  </data>
+  <data name="INVALID_SALARY_DETAILS_VALUE" xml:space="preserve">
+    <value>Percentage must be greater than 0</value>
+  </data>
+  <data name="DOWNLOAD_SALARY_SAMPLE" xml:space="preserve">
+    <value>Please download the salary grades' sample first and then upload it with the desired salary grades</value>
+  </data>
+  <data name="EXCEL_SALARY_GRADE_DATA_REQUIRED" xml:space="preserve">
+    <value>Row {0} is skipped because the salary grade En, salary grade Ar, max. , min. and currency are required</value>
+  </data>
+  <data name="INTERVIEW_ID" xml:space="preserve">
+    <value>Interview id</value>
+  </data>
+  <data name="COMMENT" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="RATE" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="INTERVIEW_IS_COMPLETED" xml:space="preserve">
+    <value>Interview is already completed and closed</value>
+  </data>
+	<data name="INTERVIEW_IS_CANCELED" xml:space="preserve">
+    <value>Sorry this interview has been canceled</value>
+  </data>
+  <data name="INTERVIEW_TIME_EARLY" xml:space="preserve">
+    <value>Interview is not started yet</value>
+  </data>
+  <data name="INVALID_RATE_RANGE" xml:space="preserve">
+    <value>Rate range between 0 and 100</value>
+  </data>
+  <data name="EXCEL_INVALID_RANGE_SALARY" xml:space="preserve">
+    <value>Row {0} are skipped because the Min. salary is bigger than the Max.</value>
+  </data>
+  <data name="EXCEL_SALARY_NAME_DUPLICATION" xml:space="preserve">
+    <value>Row {0} are skipped because there were repeated salary grades names</value>
+  </data>
+  <data name="INVALID_INTERVIEW_ID" xml:space="preserve">
+    <value>Invalid interview id</value>
+  </data>
+  <data name="USER_CAN_NOT_DELETED" xml:space="preserve">
+    <value>Can not delete this user</value>
+  </data>
+  <data name="COMPANY_IS_DEACTIVATED" xml:space="preserve">
+    <value>This company is deactivated now, please contact HRcom team at info@hrcom.io</value>
+  </data>
+  <data name="EXCEL_APPLICANT_REQUIRED" xml:space="preserve">
+    <value>Row {0} is skipped because the first name, last name and email are required</value>
+  </data>
+  <data name="EXCEL_INVALID_PHONE" xml:space="preserve">
+    <value>Row {0} are skipped because there were invalid phone</value>
+  </data>
+  <data name="INVALID_FILE" xml:space="preserve">
+    <value>Invalid file format</value>
+  </data>
+  <data name="INTERVIEW_TYPE" xml:space="preserve">
+    <value>Interview type</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DUPLICATE_INTERVIEW_NAME" xml:space="preserve">
+    <value>Interview name should be unique</value>
+  </data>
+  <data name="INVALID_DELETE" xml:space="preserve">
+    <value>Can not delete this record</value>
+  </data>
+  <data name="INVALID_UPDATE" xml:space="preserve">
+    <value>Can not update this record</value>
+  </data>
+  <data name="INVALID_ADD_INTERVIEW_SETUP" xml:space="preserve">
+    <value>Can not add new interview setup</value>
+  </data>
+  <data name="INVALID_ORDER_INTERVIEW_SETUP" xml:space="preserve">
+    <value>Can not order interview setup</value>
+  </data>
+  <data name="INVALID_INTERVIEW_SETUP" xml:space="preserve">
+    <value>Please set at least one interview to be able to start managing the applicants</value>
+  </data>
+  <data name="INVALID_CANDIDATE_INTERVIEW_TIME" xml:space="preserve">
+    <value>The candidate has interview at the same time</value>
+  </data>
+  <data name="INVALID_INTERVIEWER_INTERVIEW_TIME" xml:space="preserve">
+    <value>The Interviewer has interview at the same time</value>
+  </data>
+  <data name="INVALID_INTERVIEW_SETUP_ID" xml:space="preserve">
+    <value>Invalid Interview Setup ID</value>
+  </data>
+  <data name="INVALID_MINUTES_FOR_INTERVIEW" xml:space="preserve">
+    <value>Sorry you can't start new interviews as you already consumed the allowed minutes</value>
+  </data>
+  <data name="LOCATION_REQUIRED" xml:space="preserve">
+    <value>Location is required</value>
+  </data>
+  <data name="COLLAGE_REQUIRED" xml:space="preserve">
+    <value>Collage is required</value>
+  </data>
+  <data name="CUSTOM_TITLE_REQUIRED" xml:space="preserve">
+    <value>Job Title is required</value>
+  </data>
+  <data name="DEGREE_REQUIRED" xml:space="preserve">
+    <value>Degree is required</value>
+  </data>
+  <data name="INVALID_SALARY" xml:space="preserve">
+    <value>Select salary grade or insert custom base salary</value>
+  </data>
+  <data name="DUPLICATE_STAGE_NAME_Ar" xml:space="preserve">
+    <value>Stage name Ar should be unique</value>
+  </data>
+  <data name="DUPLICATE_STAGE_NAME_En" xml:space="preserve">
+    <value>Stage name En should be unique</value>
+  </data>
+  <data name="INVALID_STAGE_DELETE" xml:space="preserve">
+    <value>Can not delete this stage</value>
+  </data>
+  <data name="SELECT_ANOTHER_STAGE" xml:space="preserve">
+    <value>Select another different stage</value>
+  </data>
+  <data name="STAGE_HAS_APPLICATIONS" xml:space="preserve">
+    <value>There are candidates on this stage please move them to another stage</value>
+  </data>
+  <data name="INVALID_DELETE_PIPELINE" xml:space="preserve">
+    <value>You can't delete this flow</value>
+  </data>
+  <data name="INVALID_DELETE_PIPELINE_HAS_JOBS" xml:space="preserve">
+    <value>You can't delete this flow. This flow is used in published or closed job openings</value>
+  </data>
+  <data name="INVALID_DELETE_PIPELINE_IS_DEFAULT" xml:space="preserve">
+    <value>This is the default flow please select another default flow</value>
+  </data>
+  <data name="FLOW_NAMEAR_REQUIRED" xml:space="preserve">
+    <value>FLow Name Ar is required</value>
+  </data>
+  <data name="FLOW_NAMEEN_REQUIRED" xml:space="preserve">
+    <value>FLow Name En is required</value>
+  </data>
+  <data name="INVALID_REJECTION_REASON" xml:space="preserve">
+    <value>Invalid rejection reason</value>
+  </data>
+  <data name="INVALID_STAGE" xml:space="preserve">
+    <value>Invalid stage</value>
+  </data>
+  <data name="REQUIRED_REJECTION_REASON" xml:space="preserve">
+    <value>Rejection reason is required</value>
+  </data>
+  <data name="INVALID_STAGE_ACTION" xml:space="preserve">
+    <value>Invalid stage action</value>
+  </data>
+  <data name="INVALID_STAGE_HAS_ACTION" xml:space="preserve">
+    <value>Stage has action</value>
+  </data>
+  <data name="INVALID_INTERVIEW_TIME" xml:space="preserve">
+    <value>End time must be greater than start time </value>
+  </data>
+  <data name="LAST_COMPANY_NAME" xml:space="preserve">
+    <value>Last company name</value>
+  </data>
+  <data name="LAST_POSITION" xml:space="preserve">
+    <value>Last position</value>
+  </data>
+  <data name="INVALIDRATE" xml:space="preserve">
+    <value>Rate must be between 0 and 100</value>
+  </data>
+  <data name="ATTACHMENT_IS_REQUIRED" xml:space="preserve">
+    <value>Please select preoffer attachment</value>
+  </data>
+  <data name="ATTACHMENT_TITLE_DUPLICATION" xml:space="preserve">
+    <value>Attachmnet already exist</value>
+  </data>
+  <data name="INVALID_ATTACHMENT_TYPE" xml:space="preserve">
+    <value>Invalid attachment type</value>
+  </data>
+  <data name="ALREADY_FILLED_FORM" xml:space="preserve">
+    <value>Thank you! You have already filled this form</value>
+  </data>
+  <data name="COMPLETE_REQUIRED_ATTACHMENTS" xml:space="preserve">
+    <value>Complete required attachments</value>
+  </data>
+  <data name="NOT_SUBSCRIPED_COMPANY" xml:space="preserve">
+    <value>You must subscripe to activate this action</value>
+  </data>
+  <data name="USERS_OVER_PLAN_LIMIT" xml:space="preserve">
+    <value>Based on your subscribed plan, you are allowed to add {0} agents</value>
+  </data>
+  <data name="USERS_PLAN_LIMIT" xml:space="preserve">
+    <value>You've reached maximum number of agents on your plan</value>
+  </data>
+  <data name="CardIsDefault" xml:space="preserve">
+    <value>You can't delete the active card, Please active another card first</value>
+  </data>
+  <data name="JOBS_PLAN_LIMIT" xml:space="preserve">
+    <value>You have reached the allowed number of job openings, upgrade to be able to manage the new job openings</value>
+  </data>
+  <data name="JOBS_QUOTA_LIMIT" xml:space="preserve">
+    <value>Your job has been saved, but you have reached the max. number of jobs to be posted this month</value>
+  </data>
+  <data name="InformCandidateByEmail" xml:space="preserve">
+    <value>Inform Candidate By Email</value>
+  </data>
+  <data name="CANDIDATES_OVER_PLAN_LIMIT" xml:space="preserve">
+    <value>Based on your subscribed plan, you are allowed to add {0} applicants</value>
+  </data>
+  <data name="CANDIDATES_PLAN_LIMIT" xml:space="preserve">
+    <value>You've reached the maximum limit in your plan</value>
+  </data>
+  <data name="CANDIDATES_REMAIN_LIMIT" xml:space="preserve">
+    <value>You only have {0} applicants to add</value>
+  </data>
+  <data name="USERS_REMAIN_LIMIT" xml:space="preserve">
+    <value>You only have {0} users to add</value>
+  </data>
+  <data name="UPGRADE_TO_ALLOW_FEATURE" xml:space="preserve">
+    <value>Upgrade your plan to allow this feature</value>
+  </data>
+  <data name="PIPELINE_PLAN_LIMIT" xml:space="preserve">
+    <value>Sorry you have exceeded your limit. Please upgrade to be able to add and manage more workflows</value>
+  </data>
+  <data name="CLOSING_DAYS" xml:space="preserve">
+    <value>Closing days</value>
+  </data>
+  <data name="INVALID_CLOSING_DAYS" xml:space="preserve">
+    <value>Invlaid closing days</value>
+  </data>
+  <data name="TRIAL_NOT_ALLOWED" xml:space="preserve">
+    <value>Your plan is trial. You are not allowed to cancel subscription</value>
+  </data>
+  <data name="PositiveBalance" xml:space="preserve">
+    <value>The price different between the two plans is  {0} SAR</value>
+  </data>
+  <data name="ZeroBalance" xml:space="preserve">
+    <value>Your last payment is covering this transaction, just confirm the transaction</value>
+  </data>
+  <data name="NegativeBalance" xml:space="preserve">
+    <value>Your last payment is covering this transaction and wallet is updated, just confirm the upgrading</value>
+  </data>
+  <data name="MORE_INFO_FORM_COMPLETED" xml:space="preserve">
+    <value>The form is completed</value>
+  </data>
+  <data name="MORE_INFO_FORM_EXPIRED" xml:space="preserve">
+    <value>The form is expired</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_ANSWER" xml:space="preserve">
+    <value>Please answer all questions</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_ANSWER_LENGTH" xml:space="preserve">
+    <value>Invalid answer length</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_QUESTION" xml:space="preserve">
+    <value>Invalid question</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_TYPE" xml:space="preserve">
+    <value>Invalid form answer type</value>
+  </data>
+  <data name="MORE_INFO_FORM_Vedio_Length" xml:space="preserve">
+    <value>Total number of video minutes must be less or equal 5</value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="INVALID_END_DATE" xml:space="preserve">
+    <value>End date must be greater or equal to start date</value>
+  </data>
+  <data name="INVALID_FIXED_AMOUNT" xml:space="preserve">
+    <value>Amount value must be less or equal to 9999.99</value>
+  </data>
+  <data name="INVALID_MAX_LIMIT" xml:space="preserve">
+    <value>Max limit value must be less or equal to 9999.99</value>
+  </data>
+  <data name="INVALID_PERCENTAGE_AMOUNT" xml:space="preserve">
+    <value>Amount value must be greater than 0 and less or equal to 100</value>
+  </data>
+  <data name="INVALID_START_DATE" xml:space="preserve">
+    <value>Start date must be greater or equal to today</value>
+  </data>
+  <data name="START_DATE" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="COMPANIES" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="InvalidPromoCode" xml:space="preserve">
+    <value>the promo code is invalid</value>
+  </data>
+  <data name="PROMO_CODE_TYPE" xml:space="preserve">
+    <value>Promo code type</value>
+  </data>
+  <data name="EMAIL_TYPE" xml:space="preserve">
+    <value>Email Type</value>
+  </data>
+  <data name="INVALID_EMAIL_TYPE" xml:space="preserve">
+    <value>Invalid Email Type</value>
+  </data>
+  <data name="STAGE" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="DUPLICATE_ACCEPT_ACTION" xml:space="preserve">
+    <value>Accept action should be in one stage only</value>
+  </data>
+  <data name="DUPLICATE_REJECT_ACTION" xml:space="preserve">
+    <value>Reject action should be in one stage only</value>
+  </data>
+  <data name="COVER_LETTER" xml:space="preserve">
+    <value>Cover letter</value>
+  </data>
+  <data name="TEMPLATE_AR" xml:space="preserve">
+    <value>Arabic template </value>
+  </data>
+  <data name="TEMPLATE_EN" xml:space="preserve">
+    <value>English template</value>
+  </data>
+  <data name="TEMPLATE" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="REVIEW_REASON" xml:space="preserve">
+    <value>Review reason</value>
+  </data>
+  <data name="EXPIRATION_DATE" xml:space="preserve">
+    <value>Expiration date</value>
+  </data>
+  <data name="INVALID_EXPIRATION_DATE" xml:space="preserve">
+    <value>Invalid expiration date</value>
+  </data>
+  <data name="COMPANY_SIZE" xml:space="preserve">
+    <value>Company size</value>
+  </data>
+  <data name="COMPANY_TYPE" xml:space="preserve">
+    <value>Company type</value>
+  </data>
+  <data name="INVALID_COMPANY_SIZE" xml:space="preserve">
+    <value>Invalid company size</value>
+  </data>
+  <data name="INVALID_COMPANY_TYPE" xml:space="preserve">
+    <value>Invalid company type</value>
+  </data>
+  <data name="OFFER_LANGUAGE" xml:space="preserve">
+    <value>Offer language</value>
+  </data>
+  <data name="SIGNATURE_TEMPLATE" xml:space="preserve">
+    <value>Signature template</value>
+  </data>
+  <data name="GPA_GREATER_OUTOF" xml:space="preserve">
+    <value>GPA must be equal to or less than Out of value</value>
+  </data>
+  <data name="INVALID_EXTEND_REQUEST" xml:space="preserve">
+    <value>Request has send before</value>
+  </data>
+  <data name="INVALID_IMAGE_SIZE_10" xml:space="preserve">
+    <value>File size should not exceed 10MB</value>
+  </data>
+  <data name="COMPLETE_EDUCATION_MISSING_DATA" xml:space="preserve">
+    <value>complete missing data in education section</value>
+  </data>
+  <data name="NATIONALITY" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="NOT_VALID_NATIONALITY" xml:space="preserve">
+    <value>Not valid nationality</value>
+  </data>
+  <data name="TERMS_NOT_AGREE" xml:space="preserve">
+    <value>you must agree to the terms and conditions, privacy policy and disclaimer</value>
+  </data>
+  <data name="INDUSTRY" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="GPA" xml:space="preserve">
+    <value>GPA</value>
+  </data>
+  <data name="VATNUMBER" xml:space="preserve">
+    <value>Vat Number</value>
+  </data>
+  <data name="WEBSITEURL" xml:space="preserve">
+    <value>WebSite Url</value>
+  </data>
+  <data name="INVALID_WEBSITE_URL" xml:space="preserve">
+    <value>Please enter a valid website URL (e.g. https://hrcom.io/)</value>
+  </data>
+  <data name="ApplicantAppliedBefore" xml:space="preserve">
+    <value>This applicant {0} applied for this job before</value>
+  </data>
+  <data name="IntersectionInterviewTime" xml:space="preserve">
+    <value>The interviewer ({0}) has interview at the same time</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="ANNUAL_PRICE" xml:space="preserve">
+    <value>Annual price</value>
+  </data>
+  <data name="MONTH_PRICE" xml:space="preserve">
+    <value>Month price</value>
+  </data>
+  <data name="NUM_OF_CVS" xml:space="preserve">
+    <value>Number of CVs</value>
+  </data>
+  <data name="NUM_OF_JOBS" xml:space="preserve">
+    <value>Number of jobs</value>
+  </data>
+  <data name="NUM_OF_MINUTES" xml:space="preserve">
+    <value>Number of minutes</value>
+  </data>
+  <data name="NUM_OF_USERS" xml:space="preserve">
+    <value>Number of users</value>
+  </data>
+  <data name="NUM_OF_WORKFOLW_PIPELINES" xml:space="preserve">
+    <value>Number of workflow pipelines</value>
+  </data>
+  <data name="PAYMENT_TYPE" xml:space="preserve">
+    <value>Payment type</value>
+  </data>
+  <data name="PAYMENT_TYPE_VALUES" xml:space="preserve">
+    <value>Payment type must be monthly or annual</value>
+  </data>
+  <data name="CAN_NOT_DELETE_STANDARD_PLAN" xml:space="preserve">
+    <value>Can not delete standard plan</value>
+  </data>
+  <data name="CAN_NOT_DELETE_USED_PLAN" xml:space="preserve">
+    <value>Can't delete this plan it was subscribed by companies</value>
+  </data>
+  <data name="STANDARD_PLANS_MUST_HAVE_ALL_PRICING" xml:space="preserve">
+    <value>Standard plans must have monthly and annually price</value>
+  </data>
+  <data name="CAN_NOT_CHANGE_PAYMENT_TYPE" xml:space="preserve">
+    <value>Can not change payment type of subscriped plan</value>
+  </data>
+  <data name="INVALID_OTP" xml:space="preserve">
+    <value>Invalid OTP</value>
+  </data>
+  <data name="OTP_IS_EXPIRE" xml:space="preserve">
+    <value>OTP Is Expire</value>
+  </data>
+  <data name="INVLAID_HEAR_ABOUT_US" xml:space="preserve">
+    <value>Invalid Hear About Us </value>
+  </data>
+  <data name="CLOSED_JOB" xml:space="preserve">
+    <value>Sorry this vacancy is closed and no longer available</value>
+  </data>
+  <data name="COMPANY_NOT_FOUND" xml:space="preserve">
+    <value>Company Not Found</value>
+  </data>
+  <data name="CANDIDATE_HAS_NO_PHONE_NUMBER" xml:space="preserve">
+    <value>This candidate has no phone number yet</value>
+  </data>
+  <data name="VAT_NUMBER_REQUIRED" xml:space="preserve">
+    <value>Vat number required</value>
+  </data>
+  <data name="REPLACEMENT_CATEGORY_REQUIER" xml:space="preserve">
+    <value>Replaced employee is required</value>
+  </data>
+  <data name="INVALID_PIPELINE_FLOW" xml:space="preserve">
+    <value>Invalid pipeline flow</value>
+  </data>
+  <data name="PIPELINE_FLOW_REQUIRED" xml:space="preserve">
+    <value>Pipeline flow is required</value>
+  </data>
+  <data name="PUBLISHED_JOBS_QUOTA_FINISHED" xml:space="preserve">
+    <value>Your job has been saved, but you have reached the max. number of jobs to be posted this month</value>
+  </data>
+  <data name="LOGIN_TOKEN_EXPIRED" xml:space="preserve">
+    <value>Session has been expired due to inactivity</value>
+  </data>
+  <data name="CANDIDATE_ID" xml:space="preserve">
+    <value>Candidate Id</value>
+  </data>
+  <data name="CANDIDATE_NOT_FOUND" xml:space="preserve">
+    <value>Candidate not found</value>
+  </data>
+  <data name="PLAN_HAS_NO_BRAND_JOB_POST_FEATURE" xml:space="preserve">
+    <value>Brand job post is disabled in your subscription plan</value>
+  </data>
+  <data name="PLAN_HAS_NO_SEND_EMAIL_FEATURE" xml:space="preserve">
+    <value>Send email is disabled in your subscription plan</value>
+  </data>
+  <data name="PLAN_HAS_NO_SEND_OFFER_FEATURE" xml:space="preserve">
+    <value>Send offer/pre-offer is disabled in your subscription plan</value>
+  </data>
+	<data name="OfferExpired" xml:space="preserve">
+    <value>This offer has expired</value>
+  </data>
+  <data name="WEBSITE_URL_IS_REQUIRED" xml:space="preserve">
+    <value>website url must not be empty</value>
+  </data>
+  <data name="DUPLICATE_LOGIN_PROVIDER_DATA" xml:space="preserve">
+    <value>The login provider data is exist with another account</value>
+  </data>
+  <data name="INVALID_LOGIN_DATA" xml:space="preserve">
+    <value>Invalid login data</value>
+  </data>
+  <data name="TEMPLATE_REMOVED" xml:space="preserve">
+    <value>This template has been removed, please add it as a new template.</value>
+  </data>
+  <data name="DEVICE_ID" xml:space="preserve">
+    <value>Device id</value>
+  </data>
+  <data name="DEVICE_TOKEN" xml:space="preserve">
+    <value>Device token</value>
+  </data>
+  <data name="SYSTEM_NAME" xml:space="preserve">
+    <value>System Name</value>
+  </data>
+  <data name="COMPANY_IS_UNVERIFIED" xml:space="preserve">
+    <value>This company is unverified now, please contact HRcom team at info@hrcom.io</value>
+  </data>
+  <data name="INVALID_DOMAIN_NAME" xml:space="preserve">
+    <value>Invalid domain</value>
+  </data>
+  <data name="INVALID_FILE_SIZE5" xml:space="preserve">
+    <value>File size should not exceed 10MB</value>
+  </data>
+  <data name="INVALID_LINK" xml:space="preserve">
+    <value>This is an invalid Link</value>
+  </data>
+  <data name="OFFER_SUBMITTED_BEFORE" xml:space="preserve">
+    <value>You have submitted this form before, Thank you</value>
+  </data>
+  <data name="PLATFORM" xml:space="preserve">
+    <value>Platform</value>
+  </data>
+  <data name="REFRESH_TOKEN" xml:space="preserve">
+    <value>Refresh token</value>
+  </data>
+  <data name="AGENT_HAS_SYNC_EMAIL" xml:space="preserve">
+    <value>Agent has sync email</value>
+  </data>
+  <data name="USED_REJECTION_REASON" xml:space="preserve">
+    <value>Can't delete this reason it was used before</value>
+  </data>
+  <data name="CONTRACTOR_REJECTED_BY_USER" xml:space="preserve">
+    <value>Sorry this contract is not available anymore</value>
+  </data>
+  <data name="INVALIDMEDSALARYNUMBER" xml:space="preserve">
+    <value>Med Salary is invalid</value>
+  </data>
+  <data name="INVALIDMEDSALARYRANG" xml:space="preserve">
+    <value>Med Salary must between 0.00 and 99999999</value>
+  </data>
+  <data name="INVALID_MED_SALARY" xml:space="preserve">
+    <value>Medium salary should be more than Minimum and less than Maximum</value>
+  </data>
+  <data name="MEDSALARY" xml:space="preserve">
+    <value>Med Salary</value>
+  </data>
+  <data name="EXCEL_INVALID_MED_SALARY" xml:space="preserve">
+    <value>Row {0} are skipped because medium salary should be more than Minimum and less than Maximum</value>
+  </data>
+  <data name="OFFER_VALUE" xml:space="preserve">
+    <value>Offer value</value>
+  </data>
+  <data name="EXCEED_PARENT_LEVEL_LIMIT" xml:space="preserve">
+    <value>Nested child level limit is reached</value>
+  </data>
+  <data name="INVALID_PARENT_JOB_TITLE" xml:space="preserve">
+    <value>Invalid job position parent id</value>
+  </data>
+  <data name="INVALID_JOB_TITLE_DELETE" xml:space="preserve">
+    <value>Can't delete this position, it is used in the system</value>
+  </data>
+  <data name="DEPARTMENT_NAME_DUBLICATION" xml:space="preserve">
+    <value>This Department already exists, please choose another name</value>
+  </data>
+  <data name="INVALID_HEAD_AGENT" xml:space="preserve">
+    <value>Not valid head department agent</value>
+  </data>
+  <data name="INVALID_HIRING_AGENT" xml:space="preserve">
+    <value>Not valid hiring manger agent</value>
+  </data>
+  <data name="INVALID_PARENT_DEPARTMENT" xml:space="preserve">
+    <value>Invalid department parent id</value>
+  </data>
+  <data name="INVALID_Department_DELETE" xml:space="preserve">
+    <value>Can't delete this Department, it is used in the system</value>
+  </data>
+  <data name="APPROVAL_ACTION" xml:space="preserve">
+    <value>Approval action</value>
+  </data>
+  <data name="APPROVAL_TYPE" xml:space="preserve">
+    <value>Approval type</value>
+  </data>
+  <data name="APPROVED_BY" xml:space="preserve">
+    <value>Approved by</value>
+  </data>
+  <data name="CHOOSE_ROLE_OR_TITLE" xml:space="preserve">
+    <value>Choose role or title</value>
+  </data>
+  <data name="JOB_APPROVAL_STAGE" xml:space="preserve">
+    <value>Job approval stage</value>
+  </data>
+  <data name="ORDER" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="SALARY_GRADES" xml:space="preserve">
+    <value>Salary grades</value>
+  </data>
+  <data name="SALARY_RANGES" xml:space="preserve">
+    <value>Salary ranges</value>
+  </data>
+  <data name="INVALID_APPROVAL_TYPE_WITH_ACTION" xml:space="preserve">
+    <value>Invalid approval type with action</value>
+  </data>
+  <data name="INVALID_APPROVED_BY_COUNT" xml:space="preserve">
+    <value>Approved by count must be less than or equal to 6</value>
+  </data>
+  <data name="DUPLICATED_SALARY_GRADE" xml:space="preserve">
+    <value>Duplicate salary grade per action</value>
+  </data>
+  <data name="DUPLICATE_APPROVED_BY" xml:space="preserve">
+    <value>Duplicate approved by records</value>
+  </data>
+  <data name="DUPLICATE_ORDER" xml:space="preserve">
+    <value>Duplicate approved by order</value>
+  </data>
+  <data name="DUPLICATE_SALARY_RANGE" xml:space="preserve">
+    <value>Duplicate salary range per action</value>
+  </data>
+  <data name="DUPLICATED_DEPARTMENT_TYPE" xml:space="preserve">
+    <value>Duplicate department type per action</value>
+  </data>
+  <data name="DUPLICATE_APPROVAL_ACTION" xml:space="preserve">
+    <value>Duplicate approval action</value>
+  </data>
+  <data name="SALARY_GRADES_REQUIRED" xml:space="preserve">
+    <value>Salary grades are required</value>
+  </data>
+  <data name="SALARY_RANGES_REQUIRED" xml:space="preserve">
+    <value>Salary Ranges are required</value>
+  </data>
+  <data name="InvalidPublishingDays" xml:space="preserve">
+    <value>Invlaid publishing days</value>
+  </data>
+  <data name="USER_ASSIGN_TO_DEPARTMENT" xml:space="preserve">
+    <value>The agent assigned on department(s), please replace him first</value>
+  </data>
+  <data name="EMPTY_EXCEL_FILE" xml:space="preserve">
+    <value>Excel file is empty</value>
+  </data>
+  <data name="EXCEL_FILE_ONLY" xml:space="preserve">
+    <value>Excel files are only allowed</value>
+  </data>
+  <data name="EXCEL_INVALID_ROW_DATA" xml:space="preserve">
+    <value>Row {0} is skipped as it contains invalid data</value>
+  </data>
+  <data name="EXCEL_REQUIRED_ROW_DATA" xml:space="preserve">
+    <value>Row {0} is skipped as it is missing required data</value>
+  </data>
+  <data name="NOT_VALID_DEPARTMENT" xml:space="preserve">
+    <value>Selected depatment not found any more please check it first</value>
+  </data>
+  <data name="NOT_VALID_JOBTITLE" xml:space="preserve">
+    <value>Selected job title not found any more please check it first</value>
+  </data>
+  <data name="MULTIPLE_APPROVAL_SETUP" xml:space="preserve">
+    <value>Not allowed multiple approval setup for department type</value>
+  </data>
+  <data name="NOT_VALID_DIRECTMANGER" xml:space="preserve">
+    <value>Selected direct manger not found any more please check it first</value>
+  </data>
+  <data name="INVALID_EMAIL_DOMAIN" xml:space="preserve">
+    <value>The agent must be inside Adaa's domain</value>
+  </data>
+  <data name="REQUIRED_OTP_CODE" xml:space="preserve">
+    <value>OTP code is required</value>
+  </data>
+  <data name="EXCEL_ADD_AGENT_ERRORS" xml:space="preserve">
+    <value>Row {0} is skipped because {1}</value>
+  </data>
+  <data name="AGENT_PASSWORD_LENGTH" xml:space="preserve">
+    <value>Password must be with a minimum length of 15 characters</value>
+  </data>
+  <data name="PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value> Password must contain at least one special character</value>
+  </data>
+  <data name="RATE_OR_NOTE_REQUIRED" xml:space="preserve">
+    <value>At least one of the above field's values is required</value>
+  </data>
+  <data name="INVALID_PUBLISHING_DATE" xml:space="preserve">
+    <value>Publishing Date not editable</value>
+  </data>
+  <data name="TWO_FACTOR_TOKEN" xml:space="preserve">
+    <value>Two factor token</value>
+  </data>
+  <data name="INVALID_TWO_FACTOR_TOKEN" xml:space="preserve">
+    <value>Invalid two factor token</value>
+  </data>
+  <data name="ALLOWANCE_TYPE" xml:space="preserve">
+    <value>Allowance type</value>
+  </data>
+  <data name="DUPLICATE_ALLOWANCE_TYPE" xml:space="preserve">
+    <value>Duplicate allowance type</value>
+  </data>
+  <data name="ALLOWANCES" xml:space="preserve">
+    <value>Allowances</value>
+  </data>
+  <data name="ALLOWANCE_VALUE" xml:space="preserve">
+    <value>Allowance percentage</value>
+  </data>
+  <data name="MISSING_ALLOWANCES" xml:space="preserve">
+    <value>Missing allowance types</value>
+  </data>
+  <data name="EXCEL_INVALID_CURRENCY" xml:space="preserve">
+    <value>Row {0} skipped because invalid currency</value>
+  </data>
+  <data name="ALLOWANCE_NOT_EXCEED_BASIC" xml:space="preserve">
+    <value>The value can’t exceeds the minimum basic salary</value>
+  </data>
+  <data name="INVALID_JOB_ROLE" xml:space="preserve">
+    <value>Invalid job role</value>
+  </data>
+  <data name="PERMISSION" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="MISSING_PERMISSIONS" xml:space="preserve">
+    <value>Missing permissions</value>
+  </data>
+  <data name="DUPLICATE_PERMISSIONS" xml:space="preserve">
+    <value>Duplicate permissions</value>
+  </data>
+  <data name="COMPLETE_PERCENTAGE_EVALUATIONS" xml:space="preserve">
+    <value>Add all percentage evaluations</value>
+  </data>
+  <data name="PERCENTAGE_EVALUATIONS_COUNT" xml:space="preserve">
+    <value>Number of percentage evaluations must be equal 3</value>
+  </data>
+  <data name="STARS_EVALUATIONS" xml:space="preserve">
+    <value>Stars evaluations</value>
+  </data>
+  <data name="STARS_EVALUATIONS_COUNT" xml:space="preserve">
+    <value>Number of stars evaluations must be between 1 and 14</value>
+  </data>
+  <data name="CANDIDATE_EVALUATION_STATUS" xml:space="preserve">
+    <value>Candidate evaluation status</value>
+  </data>
+  <data name="CANDIDATE_STATUS" xml:space="preserve">
+    <value>Candidate status</value>
+  </data>
+  <data name="COMPLETE_STARS_EVALUATIONS" xml:space="preserve">
+    <value>Add all stars evaluations</value>
+  </data>
+  <data name="DUPLICATE_PERCENTAGE_EVALUATIONS" xml:space="preserve">
+    <value>Duplicate percentage evaluations</value>
+  </data>
+  <data name="DUPLICATE_STARS_EVALUATIONS" xml:space="preserve">
+    <value>Duplicate stars evaluations</value>
+  </data>
+  <data name="EVALUATION_PERCENTAGE_VALUE" xml:space="preserve">
+    <value>Evaluation percentage value</value>
+  </data>
+  <data name="EVALUATION_STARS_VALUE" xml:space="preserve">
+    <value>Evaluation stars value</value>
+  </data>
+  <data name="INVALID_INTERVIEW_EVALUATION_ID" xml:space="preserve">
+    <value>Invalid interview evaluation Id</value>
+  </data>
+
+
+	<data name="CHECK_REQUIREDFIELDS" xml:space="preserve">
+    <value>Please Complete your profile The following data is required to apply for this job</value>
+  </data>
+  <data name="SEND_INTERVAL" xml:space="preserve">
+    <value>Send email interval</value>
+  </data>
+  <data name="JOB_DESCRIPTION_AR" xml:space="preserve">
+    <value>Job description (AR)</value>
+  </data>
+  <data name="JOB_DESCRIPTION_EN" xml:space="preserve">
+    <value>Job description (EN)</value>
+  </data>
+  <data name="COMPETENCE_LEVELS" xml:space="preserve">
+    <value>Competence levels</value>
+  </data>
+  <data name="COMPETENCE_LEVELS_ONE_SHOWN" xml:space="preserve">
+    <value>At least one competence is required</value>
+  </data>
+  <data name="COMPETENCE_LEVEL_ID" xml:space="preserve">
+    <value>Competence level id</value>
+  </data>
+  <data name="INVALID_COMPETENCE_LEVELS" xml:space="preserve">
+    <value>Invalid competence level(s)</value>
+  </data>
+  <data name="COMPETENCE_CATEGORY_ID" xml:space="preserve">
+    <value>Competence category id</value>
+  </data>
+  <data name="DUPLICATE_COMPETENCE_CATEGORY" xml:space="preserve">
+    <value>This Category Already added before</value>
+  </data>
+  <data name="DUPLICATE_COMPETENCE_ITEM" xml:space="preserve">
+    <value>This competency Already added before</value>
+  </data>
+  <data name="DUPLICATE_COMPETENCE_LEVEL" xml:space="preserve">
+    <value>Duplicate competence level name</value>
+  </data>
+  <data name="INVALID_COMPETENCE_CATEGORY" xml:space="preserve">
+    <value>Invalid competence category</value>
+  </data>
+  <data name="CAN_NOT_DELETE_COMPETENCE_ITEM" xml:space="preserve">
+    <value>Couldn't be removed, This Item is in use with a position</value>
+  </data>
+  <data name="CAN_NOT_DUPLICATE_COMPETENCE_ITEM" xml:space="preserve">
+    <value>Duplicated competence items</value>
+  </data>
+  <data name="COMPETENCE_ITEM" xml:space="preserve">
+    <value>Competence item</value>
+  </data>
+  <data name="COMPETENCE_LEVEL" xml:space="preserve">
+    <value>Competence level</value>
+  </data>
+  <data name="ENTER_COMPETENCE_LEVELS_AND_ITEMS" xml:space="preserve">
+    <value>Enter competence levels and items</value>
+  </data>
+  <data name="INVALID_COMPETENCE_ITEMS" xml:space="preserve">
+    <value>Invalid competence items</value>
+  </data>
+  <data name="CAN_NOT_DELETE_TEMPLATE" xml:space="preserve">
+    <value>Can not delete this template type</value>
+  </data>
+  <data name="JOB_REQUEST_IS_HOLD" xml:space="preserve">
+    <value>Job request is hold</value>
+  </data>
+  <data name="JOB_REQUEST_IS_PENDING" xml:space="preserve">
+    <value>Job request is pending</value>
+  </data>
+  <data name="NOT_VALID_FILE_SIZE" xml:space="preserve">
+    <value>Not valid file size, allowed size is {0} MB</value>
+  </data>
+  <data name="NOT_VALID_FILE_TYPE" xml:space="preserve">
+    <value>Not valid file type, allowed type(s) = {0}</value>
+  </data>
+  <data name="TEMPLATE_TYPE" xml:space="preserve">
+    <value>Template type</value>
+  </data>
+  <data name="TEMPLATE_TYPE_ALREADY_EXIST" xml:space="preserve">
+    <value>Template type already exist</value>
+  </data>
+  <data name="SMS_LANGUAGE" xml:space="preserve">
+    <value>SMS language</value>
+  </data>
+  <data name="APPLICATION_ID" xml:space="preserve">
+    <value>Application id</value>
+  </data>
+  <data name="CANDIDATE_LIST" xml:space="preserve">
+    <value>Candidate list</value>
+  </data>
+  <data name="INVALID_MICROSOFT_ACCOUNT" xml:space="preserve">
+    <value>Please choose interviewer with valid microsoft account</value>
+  </data>
+  <data name="MEETING_PLATFORM" xml:space="preserve">
+    <value>Meeting platform</value>
+  </data>
+  <data name="ALLOWANCE_NAME_REQUIRED" xml:space="preserve">
+    <value>Allowance names is required</value>
+  </data>
+  <data name="NATIONALITY_VACATION_ADDED_BEFORE" xml:space="preserve">
+    <value>This Job Grade is added before with same nationality and grade before</value>
+  </data>
+  <data name="VACATION_BALANCE" xml:space="preserve">
+    <value>Vacation balance</value>
+  </data>
+  <data name="DOCUMENT_NAME_DUPLICATE" xml:space="preserve">
+    <value>This document name already exists</value>
+  </data>
+</root>

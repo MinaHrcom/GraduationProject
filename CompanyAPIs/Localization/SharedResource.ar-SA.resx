@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BODY" xml:space="preserve">
+    <value>محتوى الرسالة</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="EMAIL_ALREADY_SUBSCRIBED" xml:space="preserve">
+    <value>هذا البريد الإلكتروني مسجل من قبل</value>
+  </data>
+  <data name="SUBJECT" xml:space="preserve">
+    <value>عنوان الرسالة</value>
+  </data>
+  <data name="INVALID_EMAIL_PASSWORD" xml:space="preserve">
+    <value>البريد الإلكتروني وكلمة المرور اللذين أدخلتهما غير صحيحين</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>اختبار</value>
+  </data>
+  <data name="TRY_AGAIN_LATER_ERROR" xml:space="preserve">
+    <value>حدث خطأ من فضلك حاول مرة أخرى</value>
+  </data>
+  <data name="{0}_IS_NOT_VALID_FORMAT" xml:space="preserve">
+    <value>{0} ليس في صيغة صحيحة</value>
+  </data>
+  <data name="{0}_IS_REQUIRED" xml:space="preserve">
+    <value>{0} مطلوب</value>
+  </data>
+  <data name="EMAIL_CONFIRMATION_ERROR" xml:space="preserve">
+    <value>من فضلك قم بتأكيد البريد الإلكتروني الخاص بك</value>
+  </data>
+  <data name="DOMAIN_REGISTRED_BEFORE" xml:space="preserve">
+    <value>هذا النطاق مسجل من قبل</value>
+  </data>
+  <data name="EMAIL_REGISTRED_BEFORE" xml:space="preserve">
+    <value>هذا البريد الالكترونى مسجل من قبل</value>
+  </data>
+  <data name="INVALID_PHONE_NUMBER" xml:space="preserve">
+    <value>رقم جوال غير صحيح</value>
+  </data>
+  <data name="CONFIRM_PASSWORD" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="PASSWORD_NOT_MATCH" xml:space="preserve">
+    <value>كلمة المرور وتأكيد كلمة المرور لا تتطابق</value>
+  </data>
+  <data name="TOKEN" xml:space="preserve">
+    <value>الرمز</value>
+  </data>
+  <data name="ACCOUNT_SUSPENDED" xml:space="preserve">
+    <value>لقد تم ايقاف حسابك ، الرجاء مراجعة الشخص المسئول</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>الرمز غير صحيح</value>
+  </data>
+  <data name="PasswordRequiresDigit" xml:space="preserve">
+    <value>كلمة المرور يجب ان تكون مزيج من الحروف والأرقام</value>
+  </data>
+  <data name="PasswordRequiresLower" xml:space="preserve">
+    <value>كلمة المرور يجب ان تكون مزيج من الأحرف الكبيرة والصغيرة</value>
+  </data>
+  <data name="PasswordRequiresUpper" xml:space="preserve">
+    <value>كلمة المرور يجب ان تكون مزيج من الأحرف الكبيرة والصغيرة</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>كلمة المرور يجب ان تكون على الأقل 8 أحرف</value>
+  </data>
+  <data name="DOMAIN" xml:space="preserve">
+    <value>االنطاق</value>
+  </data>
+  <data name="FIRSTNAME" xml:space="preserve">
+    <value>الاسم الاول</value>
+  </data>
+  <data name="LASTNAME" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="{0}INVALID_DOMAIN" xml:space="preserve">
+    <value>{0} مسموح للغة الإنجليزية فقط ، ولا يُسمح بالتباعد والحروف الخاصة</value>
+  </data>
+  <data name="{0}_EXCEED_MAX_LENGTH" xml:space="preserve">
+    <value>{0} تعدى الحد المسموح بيه من الحروف</value>
+  </data>
+  <data name="COMPANYNAMEAR" xml:space="preserve">
+    <value>أسم الشركه باللغة العربية</value>
+  </data>
+  <data name="COMPANYNAMEEN" xml:space="preserve">
+    <value>أسم الشركه باللغة الانجليزية</value>
+  </data>
+  <data name="WAIT_ONE_MINUTE" xml:space="preserve">
+    <value>انتظر دقيقة قبل الإرسال مرة أخرى</value>
+  </data>
+  <data name="PasswordValidation" xml:space="preserve">
+    <value>رمز مرور خاطئ. يجب أن تتبع كلمة المرور القوية هذه القواعد:
+على الأقل 8 أحرف و 12 حرفًا كحد أقصى
+مزيج من الأحرف الكبيرة والصغيرة
+مزيج من الحروف والأرقام</value>
+  </data>
+  <data name="DUPLICATE_NAME_AR" xml:space="preserve">
+    <value>الاسم العربي موجود من قبل</value>
+  </data>
+  <data name="DUPLICATE_NAME_EN" xml:space="preserve">
+    <value>الاسم الانجليزي موجود من قبل</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>الرقم التعريفي</value>
+  </data>
+  <data name="JOB_ROLE_NAME_DUPLICATED" xml:space="preserve">
+    <value>هذه الوظيفة موجودة من قبل ، من فضلك اختر اسم اخر</value>
+  </data>
+  <data name="NAME_AR" xml:space="preserve">
+    <value>الاسم العربي</value>
+  </data>
+  <data name="NAME_EN" xml:space="preserve">
+    <value>الاسم الانجليزي</value>
+  </data>
+  <data name="{0}_MAX_LENGTH_IS_{1}" xml:space="preserve">
+    <value>{0} له حد أقصى {1} حرف</value>
+  </data>
+  <data name="{0}_ONLY_AR_LETTERS" xml:space="preserve">
+    <value>{0} يجب ان يكون حروف عربية فقط</value>
+  </data>
+  <data name="{0}_ONLY_EN_LETTERS" xml:space="preserve">
+    <value>{0} يجب أن يكون حروف انجليزية فقط</value>
+  </data>
+  <data name="DATA_NOT_FOUND" xml:space="preserve">
+    <value>القيمة غير موجودة</value>
+  </data>
+  <data name="COMPANY_NOT_EXIST" xml:space="preserve">
+    <value>لا توجد شركة مسجلة بهذا الدومين</value>
+  </data>
+  <data name="INTERNAL_SERVER_ERROR" xml:space="preserve">
+    <value>حدث خطأ من فضلك تواصل مع الإدارة</value>
+  </data>
+  <data name="CITY_NOT_BELONG_TO_COUNTRY" xml:space="preserve">
+    <value>هذة المدينة لا تقع تحت هذة الدولة</value>
+  </data>
+  <data name="ERROR_CONFIRMING_EMAIL" xml:space="preserve">
+    <value>حدث خطأ عند التحقق من البريد الالكترونى</value>
+  </data>
+  <data name="EMAIL_ALREADY_CONFIRMED" xml:space="preserve">
+    <value>تم التحقق من البريد الالكترونى مسبقا</value>
+  </data>
+  <data name="NO_PERMISSION_SELECTED" xml:space="preserve">
+    <value>يجب ان تحتوى الوظيفة على صلاحية واحدة على الأقل</value>
+  </data>
+  <data name="PERMISSIONS" xml:space="preserve">
+    <value>الصلاحيات</value>
+  </data>
+  <data name="INVALID_IMAGE_FORMAT" xml:space="preserve">
+    <value>الصورة غير صالحة</value>
+  </data>
+  <data name="INVALID_IMAGE_SIZE" xml:space="preserve">
+    <value>يجب أن لا يتعدى حجم الملف 10 ميجا بايت</value>
+  </data>
+  <data name="JOB_ROLE" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="DUPLICATE_EMAIL" xml:space="preserve">
+    <value>هذا البريد الالكترونى مسجل من قبل</value>
+  </data>
+  <data name="NO_JOB_ROLE_SELECTED" xml:space="preserve">
+    <value>يجب ان تختار على الأقل وظيفة واحدة </value>
+  </data>
+  <data name="NOT_VALID_JOB_ROLES" xml:space="preserve">
+    <value>الوظيفة غير صحيحة</value>
+  </data>
+  <data name="MAXIMUM_SALARY_SHOULD_BE_BIGGER_THAN_MINIMUM" xml:space="preserve">
+    <value>الحد القصى للأجر يجب ان يكون اكبر من الحد الأدنى</value>
+  </data>
+  <data name="CURRENCY" xml:space="preserve">
+    <value>العملة</value>
+  </data>
+  <data name="CURRENCY_NOT_EXIST_IN_DATABASE" xml:space="preserve">
+    <value>هذة العملة غير موجوده بالنظام</value>
+  </data>
+  <data name="GRADENAMEAR" xml:space="preserve">
+    <value>أسم الفئة باللغة العربية</value>
+  </data>
+  <data name="GRADENAMEEN" xml:space="preserve">
+    <value>أسم الفئة باللغة الانجليزية</value>
+  </data>
+  <data name="INVALIDMAXSALARYNUMBER" xml:space="preserve">
+    <value>أقصى مرتب غير صحيح</value>
+  </data>
+  <data name="INVALIDMAXSALARYRANG" xml:space="preserve">
+    <value>أقصى مرتب يجب ان يكون بين 0.00 و 99999999</value>
+  </data>
+  <data name="INVALIDMINSALARYNUMBER" xml:space="preserve">
+    <value>أدنى مرتب غير صحيح</value>
+  </data>
+  <data name="INVALIDMINSALARYRANG" xml:space="preserve">
+    <value>أدنى مرتب يجب ان يكون بين 0.00 و 99999999</value>
+  </data>
+  <data name="MAXSALARY" xml:space="preserve">
+    <value>أقصى مرتب</value>
+  </data>
+  <data name="MINSALARY" xml:space="preserve">
+    <value>أدنى مرتب</value>
+  </data>
+  <data name="BRANCH_NAME_DUBLICATION" xml:space="preserve">
+    <value>هذا الفرع موجود من قبل ، من فضلك اختر اسم اخر</value>
+  </data>
+  <data name="SALARY_NAME-DUBLICATION" xml:space="preserve">
+    <value>هذه الفئة موجودة من قبل</value>
+  </data>
+  <data name="INVALID_EMAIL" xml:space="preserve">
+    <value>بريد الكترونى غير صحيح</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>حالة التفعيل</value>
+  </data>
+  <data name="NOT_VALID_ACTIONS" xml:space="preserve">
+    <value>الصلاحيات غير صحيحة</value>
+  </data>
+  <data name="ROLE_HAS_USERS" xml:space="preserve">
+    <value>عفوا لا تستطيع حذف هذه الوظيفة لوجود عملاء مدرجين تحتها</value>
+  </data>
+  <data name="JOBTITLENAMEAR" xml:space="preserve">
+    <value>اسم الوظيفة باللغة العربية</value>
+  </data>
+  <data name="JOBTITLENAMEEN" xml:space="preserve">
+    <value>اسم الوظيفة باللغه الانجليزية</value>
+  </data>
+  <data name="JOB_TITLE_NAME_DUBLICATION" xml:space="preserve">
+    <value>هذه الوظيفة موجودة من قبل، من فضلك اختر اسم اخر</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="NOT_VALID_JOB_REQUISITION_DATA" xml:space="preserve">
+    <value>لا يمكن ان يكون الحقل الزامى ومخفى </value>
+  </data>
+  <data name="NOT_VALID_JOB_REQUISITION_ITEM" xml:space="preserve">
+    <value>طلب الوظيفة غير صحيح</value>
+  </data>
+  <data name="NOT_VALID_JOB_REQUISITION_VALUE" xml:space="preserve">
+    <value>جميع العناصر لا تحتوى على قيمة ما عدا كلمة عن الشركه</value>
+  </data>
+  <data name="JOB_REQUISITION_EMPTY_MODEL" xml:space="preserve">
+    <value>لابد من ارسال على الاقل عنصر واحد لحفظه</value>
+  </data>
+  <data name="NOT_VALID_SALARY_GRADE" xml:space="preserve">
+    <value>الراتب غير صحيح</value>
+  </data>
+  <data name="VALUE" xml:space="preserve">
+    <value>القيمة</value>
+  </data>
+  <data name="BRANCH" xml:space="preserve">
+    <value>الفرع</value>
+  </data>
+  <data name="JOB_TITLE" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="JOB_TYPE" xml:space="preserve">
+    <value>نوع الوظيفة</value>
+  </data>
+  <data name="JOINING_DATE" xml:space="preserve">
+    <value>تاريخ الإنضمام</value>
+  </data>
+  <data name="NUM_OF_OPENINGS" xml:space="preserve">
+    <value>عدد الوظائف المتاحة</value>
+  </data>
+  <data name="SALARY_GRADE" xml:space="preserve">
+    <value>درجة الراتب</value>
+  </data>
+  <data name="{0}_ONLTY_NUMBER" xml:space="preserve">
+    <value>{0} يجب انت تكون رقم</value>
+  </data>
+  <data name="INVALID_BRANCH" xml:space="preserve">
+    <value>الفرع غير صحيح</value>
+  </data>
+  <data name="INVALID_JOB_TITLE" xml:space="preserve">
+    <value>الوظيفة غير صحيحة</value>
+  </data>
+  <data name="INVALID_JOB_TYPE" xml:space="preserve">
+    <value>نوع الوظيفة غير صحيح</value>
+  </data>
+  <data name="INVALID_JOINING_DATE" xml:space="preserve">
+    <value>تاريخ الإنضمام يجب أن يكون أكبر من تاريخ اليوم</value>
+  </data>
+  <data name="INVALID_NUM_OF_OPENINGS" xml:space="preserve">
+    <value>عدد الوظائف المتاحة يجب أن يكون أكبر من صفر</value>
+  </data>
+  <data name="INVALID_SALARY_GRADE" xml:space="preserve">
+    <value>درجة الراتب غير صحيحة</value>
+  </data>
+  <data name="COMPANY_BRIEF_REQUIRED" xml:space="preserve">
+    <value>لابد من ادخال كلمة عن الشركه </value>
+  </data>
+  <data name="INVALIDWEIGHT" xml:space="preserve">
+    <value>القيمة لابد ان تكون بين 0 و 100</value>
+  </data>
+  <data name="INVALID_JOB_POST_REQUEST" xml:space="preserve">
+    <value>طلب الوظيفة غير صحيح</value>
+  </data>
+  <data name="INVALID_NATIONALITY" xml:space="preserve">
+    <value>الجنسية غير صحيحة</value>
+  </data>
+  <data name="INVALID_RESIDENCY" xml:space="preserve">
+    <value>الاقامة غير صحيحة</value>
+  </data>
+  <data name="JOBDESCRIPTIONNAMEAR" xml:space="preserve">
+    <value>الوصف الوظيفي باللغة العربية</value>
+  </data>
+  <data name="JOBDESCRIPTIONNAMEEN" xml:space="preserve">
+    <value>الوصف الوظيفي باللغه الانجليزية</value>
+  </data>
+  <data name="JOBSPECIFICATION" xml:space="preserve">
+    <value>خصائص الوظيفة</value>
+  </data>
+  <data name="MaxAgeMustBeGreaterThanMinAge" xml:space="preserve">
+    <value>يجب ان لا يزيد الحد الادنى للعمر عن الحد الاقصى</value>
+  </data>
+  <data name="TemplateNameDublication" xml:space="preserve">
+    <value>يجب أن يكون اسم القالب غير مكرر</value>
+  </data>
+  <data name="ThereIsDublicationInEducation" xml:space="preserve">
+    <value>لا يمكنك تكرار الكلية و الدرجة العلمية</value>
+  </data>
+  <data name="ThereIsDublicationInLanguage" xml:space="preserve">
+    <value>لا يمكنك تكرار اللغة بمستوى الكفاءة</value>
+  </data>
+  <data name="VALUEAR" xml:space="preserve">
+    <value>كلمة عن الشركه باللغة العربية</value>
+  </data>
+  <data name="VALUEEN" xml:space="preserve">
+    <value>كلمة عن الشركة باللغة الانجليزية</value>
+  </data>
+  <data name="CONFIRM_NEW_PASSWORD" xml:space="preserve">
+    <value>تأكيد كلمة المرور الجديدة</value>
+  </data>
+  <data name="CURRENT_PASSWORD" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
+  </data>
+  <data name="EMAIL_REGISTRED_BEFORE_OTHER_COMPANY" xml:space="preserve">
+    <value>عفوا هذا البريد الاكترونى مسجل من قبل فى شركة اخرى</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>كلمة مرور غير صحيحة</value>
+  </data>
+  <data name="NEW_PASSWORD" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+  </data>
+  <data name="PasswordMismatch" xml:space="preserve">
+    <value>كلمة مرور غير صحيحة</value>
+  </data>
+  <data name="AnswerMustGreateThan2Answer" xml:space="preserve">
+    <value>الاجابات لابد ان  تكون اجابتين على الاقل</value>
+  </data>
+  <data name="AnswerOfQuestionIsDublication" xml:space="preserve">
+    <value>لا يمكنك تكرار اجابات الاسئلة </value>
+  </data>
+  <data name="MustEnterWeightIfItemIsPerfered" xml:space="preserve">
+    <value>لابد من ادخال وزن اذا كان العنصر نوعه مفضل </value>
+  </data>
+  <data name="TotalWeightExcced100" xml:space="preserve">
+    <value>مجموع الاوزان لا يمكن ان يزيد عن 100</value>
+  </data>
+  <data name="EssayQuestionMustnotContainAnyAnswer" xml:space="preserve">
+    <value>الاسئلة المقالية لا تحتوى على اى اجابات</value>
+  </data>
+  <data name="MustEnterQuestion" xml:space="preserve">
+    <value>لابد من ادخال اسئلة</value>
+  </data>
+  <data name="WeightMustGreaterThanZero" xml:space="preserve">
+    <value>الوزن يجب ان يكون اكثر من 0</value>
+  </data>
+  <data name="ANSWERNAMEAR" xml:space="preserve">
+    <value>الاجابة باللغه العربية</value>
+  </data>
+  <data name="ANSWERNAMEEN" xml:space="preserve">
+    <value>الاجابة باللغه الانجليزية</value>
+  </data>
+  <data name="QUESTIONNAMEAR" xml:space="preserve">
+    <value>اسم السؤال باللغة العربية</value>
+  </data>
+  <data name="QUESTIONNAMEEN" xml:space="preserve">
+    <value>اسم السؤال باللغه الانجليزية</value>
+  </data>
+  <data name="SectionIsDublication" xml:space="preserve">
+    <value>يجب أن يكون اسم القسم فريدًا</value>
+  </data>
+  <data name="SECTIONNAMEAR" xml:space="preserve">
+    <value>أسم القسم باللغه العربية</value>
+  </data>
+  <data name="SECTIONNAMEEN" xml:space="preserve">
+    <value>أسم القسم باللغه الانجليزية</value>
+  </data>
+  <data name="TEMPLATENAMEAR" xml:space="preserve">
+    <value>أسم القالب باللغه العربية</value>
+  </data>
+  <data name="TEMPLATENAMEEN" xml:space="preserve">
+    <value>أسم القالب باللغة الانجليزية</value>
+  </data>
+  <data name="YesOrNoQuestionContainOnlyTwoAnswer" xml:space="preserve">
+    <value>اسئلة نعم او لا يجب ان تحتوى على اجابتين</value>
+  </data>
+  <data name="JOB_REQUEST_CAN_NOT_DELETED" xml:space="preserve">
+    <value>لا يمكن حذف طلب الوظيفة</value>
+  </data>
+  <data name="JOB_REQUEST_IS_CLOSED" xml:space="preserve">
+    <value>طلب الوظيفة تم اغلاقه</value>
+  </data>
+  <data name="JOB_REQUEST_IS_PUBLISHED" xml:space="preserve">
+    <value>طلب الوظيفة منشور من قبل</value>
+  </data>
+  <data name="AtLeastOneAnswer" xml:space="preserve">
+    <value>على الاقل لابد من وجود اجابة واحدة على الاقل</value>
+  </data>
+  <data name="DateMustBeNotIntersect" xml:space="preserve">
+    <value>يجب ألا تتقاطع إجابات التاريخ مع بعضها البعض</value>
+  </data>
+  <data name="InvalidAnswer" xml:space="preserve">
+    <value>يوجد خطا فى اجابات الاسئلة</value>
+  </data>
+  <data name="TimeMustNotBeIntersect" xml:space="preserve">
+    <value>يجب ألا تتقاطع إجابات الوقت مع بعضها البعض</value>
+  </data>
+  <data name="DateToMustGreaterThanDateForm" xml:space="preserve">
+    <value>التاريخ الى لابد ان يكون اكبر من التاريخ من</value>
+  </data>
+  <data name="TimeToMustGreaterThanTimeForm" xml:space="preserve">
+    <value>الوقت الى لابد اكبر من الوقت من</value>
+  </data>
+  <data name="JOB_TITLE_CATEGORY" xml:space="preserve">
+    <value>تصنيف الوظيفة</value>
+  </data>
+  <data name="NOT_VALID_JOB_TITLE_CATEGORY" xml:space="preserve">
+    <value>هذا التصنيف غير صحيح</value>
+  </data>
+  <data name="ContractTypeIsRequired" xml:space="preserve">
+    <value>لابد من ادخال نوع العقد</value>
+  </data>
+  <data name="MustEnterDescription" xml:space="preserve">
+    <value>لابد من ادخال التفاصيل</value>
+  </data>
+  <data name="COUNTRY_CODE" xml:space="preserve">
+    <value>كود البلد</value>
+  </data>
+  <data name="COUNTRY_CODE_NUMBER" xml:space="preserve">
+    <value>رقم كود البلد</value>
+  </data>
+  <data name="DATE_OF_BIRTH" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>الجنس</value>
+  </data>
+  <data name="InvalidGender" xml:space="preserve">
+    <value>الجنس غير صحيح</value>
+  </data>
+  <data name="InvalidMaritalStatus" xml:space="preserve">
+    <value>الحالة الإجتماعية غير صحيحة</value>
+  </data>
+  <data name="MARITAL_STATUS" xml:space="preserve">
+    <value>الحالة الإجتماعية</value>
+  </data>
+  <data name="NOT_VALID_COUNTRY" xml:space="preserve">
+    <value>البلد غير صحيحة</value>
+  </data>
+  <data name="RESIDENCY" xml:space="preserve">
+    <value>البلد</value>
+  </data>
+  <data name="RESIDENCY_AR" xml:space="preserve">
+    <value>اسم البلد عربي</value>
+  </data>
+  <data name="RESIDENCY_EN" xml:space="preserve">
+    <value>اسم البلد انجليزي</value>
+  </data>
+  <data name="FILE" xml:space="preserve">
+    <value>الملف</value>
+  </data>
+  <data name="FILE_NAME" xml:space="preserve">
+    <value>اسم الملف</value>
+  </data>
+  <data name="IMAGE" xml:space="preserve">
+    <value>الصورة</value>
+  </data>
+  <data name="FILE_EXTENSION" xml:space="preserve">
+    <value>امتداد الملف</value>
+  </data>
+  <data name="COLLEGE" xml:space="preserve">
+    <value>الكلية</value>
+  </data>
+  <data name="DEGREE" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
+  <data name="INVALID_COLLEGE" xml:space="preserve">
+    <value>الكلية غير صحيحة</value>
+  </data>
+  <data name="INVALID_DEGREE" xml:space="preserve">
+    <value>الدرجة غير صحيحة</value>
+  </data>
+  <data name="COMPANY_NAME" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>التاريخ من</value>
+  </data>
+  <data name="DUPLICATE_LANGUAGE" xml:space="preserve">
+    <value>لغة متكررة</value>
+  </data>
+  <data name="ENGLISH_PROFICIENCY_LEVEL" xml:space="preserve">
+    <value>مستوى إجادة اللغة الإنجليزية</value>
+  </data>
+  <data name="INVALID_ENGLISH_PROFICIENCY" xml:space="preserve">
+    <value>مستوى اللغة الانجليزية غير صحيح</value>
+  </data>
+  <data name="INVALID_LANGUAGE_PROFICIENCY" xml:space="preserve">
+    <value>احدى مستويات اللغة غير صحيحة</value>
+  </data>
+  <data name="INVALID_SKILL" xml:space="preserve">
+    <value>مهارة غير صحيحة</value>
+  </data>
+  <data name="INVALID_GPA_OUT_OF" xml:space="preserve">
+    <value>المعدل التراكمي غير صحيح</value>
+  </data>
+  <data name="INVALID_GPA" xml:space="preserve">
+    <value>المعدل التراكمي غير صحيح</value>
+  </data>
+  <data name="APPLIED_BEFORE" xml:space="preserve">
+    <value>لقد قدمت على هذه الوظيفة بالفعل</value>
+  </data>
+  <data name="COMPLETE_SCREENING_QUESTIONS" xml:space="preserve">
+    <value>من فضلك أكمل الاسئلة اولا</value>
+  </data>
+  <data name="INVALID_QUESTION" xml:space="preserve">
+    <value>السؤال غير صحيح</value>
+  </data>
+  <data name="INVALID_QUESTION_SECTION" xml:space="preserve">
+    <value>القسم غير صحيح</value>
+  </data>
+  <data name="JOB_REQUEST_CLOSED" xml:space="preserve">
+    <value>عذرا هذه الوظيفة مغلقة ولم تعد متاحة</value>
+  </data>
+  <data name="PROFILE_NOT_COMPLETE" xml:space="preserve">
+    <value>الرجاء إكمال الملف الشخصى للتمكن من التقديم على الوظائف</value>
+  </data>
+  <data name="USER_NOT_FOUND" xml:space="preserve">
+    <value>المستخدم غير موجود</value>
+  </data>
+  <data name="CLOSING_DATE" xml:space="preserve">
+    <value>تاريخ الإغلاق</value>
+  </data>
+  <data name="CHOOSE_OR_ADD_JOB_TITLE" xml:space="preserve">
+    <value>قم باختيار اوإضافة وظيفة</value>
+  </data>
+  <data name="INVALID_WIZARD_VIEW" xml:space="preserve">
+    <value>البيانات تم تسجيلها من قبل</value>
+  </data>
+  <data name="LOGO_REQUIRED" xml:space="preserve">
+    <value>لابد من ادخال اللوجو</value>
+  </data>
+  <data name="REQUIRED_CATEGORY" xml:space="preserve">
+    <value>لابد من ادخال تصنيف الوظيفه</value>
+  </data>
+  <data name="INVALID_EDIT_FOR_APPROVAL_STATUS" xml:space="preserve">
+    <value>لا يمكن تعديل هذه البيانات</value>
+  </data>
+  <data name="INVALID_DELETE_FOR_APPROVAL_STATUS" xml:space="preserve">
+    <value>لا يمكن حذف هذه البيانات</value>
+  </data>
+  <data name="DISAPPROVED_REASON" xml:space="preserve">
+    <value>سبب الرفض</value>
+  </data>
+  <data name="INVALID_POST_FOR_APPROVAL_STATUS" xml:space="preserve">
+    <value>لا يمكن نشر هذه الوظيفة</value>
+  </data>
+  <data name="Download_Sample_Sheet" xml:space="preserve">
+    <value>يجب تحميل النموذج أولا لكى يتسنى لك رفع ملف العملاء</value>
+  </data>
+  <data name="Error_In_Excel" xml:space="preserve">
+    <value>خطأ فى الأيكسيل</value>
+  </data>
+  <data name="INVALID_EXCEL_EXTENSION" xml:space="preserve">
+    <value>الامتداد غير صحيح ,يجب تحميل النموذج أولا لكى يتسنى لك رفع ملف العملاء</value>
+  </data>
+  <data name="EXCEL_INVALID_File" xml:space="preserve">
+    <value>الملف غير صالح</value>
+  </data>
+  <data name="EXCEL_INVALID__SIZE" xml:space="preserve">
+    <value>الحجم المسموح 10 ميجا</value>
+  </data>
+  <data name="EXCEL_DATA_REQUIRED" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه لأن يجب ادخال الاسم الاول , الاسم الاخير , البريد الالكترونى و الوظيفه</value>
+  </data>
+  <data name="EXCEL_EXCEED_MAX_LENGTH" xml:space="preserve">
+    <value>يتم تخطي الصف {0} لأنه يجب ألا يتجاوز الاسم الأول والأخير 50 ​​حرفًا لكل منهما</value>
+  </data>
+  <data name="EXCEL_INVALID_MAIL" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه بسبب خطأ فى البريد الالكترونى</value>
+  </data>
+  <data name="EXCEL_MAIL_DUPLICATION" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه بسبب تكرار البريد الالكترونى</value>
+  </data>
+  <data name="EXCEL_RECORDS_NUMBER" xml:space="preserve">
+    <value>العدد المسموح به من الصفوف هو 100</value>
+  </data>
+  <data name="INVALID_SALARY_SECTION" xml:space="preserve">
+    <value>مفردات المرتب يجب ان لا تتعدى 100%</value>
+  </data>
+  <data name="INVALID_SALARY_SECTION_NAME" xml:space="preserve">
+    <value>يرجى عدم ادخال نفس مفردات المرتب اكثر من مرة</value>
+  </data>
+  <data name="INVALID_SALARY_DETAILS_VALUE" xml:space="preserve">
+    <value>النسبة يجب ان تزيد عن 0</value>
+  </data>
+  <data name="DOWNLOAD_SALARY_SAMPLE" xml:space="preserve">
+    <value>يجب حميل النموذج أولا لكى يتسنى لك رفع ملف الرواتب</value>
+  </data>
+  <data name="EXCEL_SALARY_EXCEED_MAX_LENGTH" xml:space="preserve">
+    <value>يتم تخطي الصف {0} لأنه يجب ألا يتجاوز الاسم العربى والانجليزى 50 ​​حرفًا لكل منهما</value>
+  </data>
+  <data name="EXCEL_SALARY_GRADE_DATA_REQUIRED" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه لأن يجب ادخال الاسم باللغه الانجليزيه, الاسم باللغه العربيه, الحد الادنى , الحد الاقصى و العمله</value>
+  </data>
+  <data name="INTERVIEW_ID" xml:space="preserve">
+    <value>رقم المقابلة</value>
+  </data>
+  <data name="COMMENT" xml:space="preserve">
+    <value>التعليق</value>
+  </data>
+  <data name="RATE" xml:space="preserve">
+    <value>التقييم</value>
+  </data>
+  <data name="INTERVIEW_IS_COMPLETED" xml:space="preserve">
+    <value>المقابلة اكتملت وتم إغلاقها</value>
+  </data>
+	<data name="INTERVIEW_IS_CANCELED" xml:space="preserve">
+    <value>نعتذر تم إالغاء هذه المقابله</value>
+  </data>
+  <data name="INTERVIEW_TIME_EARLY" xml:space="preserve">
+    <value>المقابلة لم تبدأ</value>
+  </data>
+  <data name="INVALID_RATE_RANGE" xml:space="preserve">
+    <value>التقييم يجب ان يكون بين 0 و 100</value>
+  </data>
+  <data name="EXCEL_INVALID_RANGE_SALARY" xml:space="preserve">
+    <value>الراتب رقم {0} تم حذفه لأن الحد الأدنى للراتب أكبر من الحد الأقصى</value>
+  </data>
+  <data name="EXCEL_SALARY_NAME_DUPLICATION" xml:space="preserve">
+    <value>الراتب رقم {0} تم حذفه بسبب تكرار اسم الراتب</value>
+  </data>
+  <data name="INVALID_INTERVIEW_ID" xml:space="preserve">
+    <value>رقم المقابلة غير صحيح</value>
+  </data>
+  <data name="USER_CAN_NOT_DELETED" xml:space="preserve">
+    <value>لا يمكن حذف هذا المستخدم</value>
+  </data>
+  <data name="COMPANY_IS_DEACTIVATED" xml:space="preserve">
+    <value>هذه الشركة موقوفة، الرجاء الاتصال بنا من خلال الايميل info@hrcom.io</value>
+  </data>
+  <data name="EXCEL_APPLICANT_REQUIRED" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه لأن يجب ادخال الاسم الاول , الاسم الاخير و البريد الالكترونى </value>
+  </data>
+  <data name="EXCEL_INVALID_PHONE" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه بسبب خطأ فى التليفون</value>
+  </data>
+  <data name="INVALID_FILE" xml:space="preserve">
+    <value>صيغة الملف غير صحيحة</value>
+  </data>
+  <data name="INTERVIEW_TYPE" xml:space="preserve">
+    <value>نوع المقابلة</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="DUPLICATE_INTERVIEW_NAME" xml:space="preserve">
+    <value>اسم المقابلة يجب ان لا يتكرر</value>
+  </data>
+  <data name="INVALID_DELETE" xml:space="preserve">
+    <value>لا يمكن حذف هذه القيمة </value>
+  </data>
+  <data name="INVALID_UPDATE" xml:space="preserve">
+    <value>لا يمكن تعديل هذه القيمة</value>
+  </data>
+  <data name="INVALID_ADD_INTERVIEW_SETUP" xml:space="preserve">
+    <value>لا يمكن إضافة اعدادات مقابلة جديدة</value>
+  </data>
+  <data name="INVALID_ORDER_INTERVIEW_SETUP" xml:space="preserve">
+    <value>لا يمكن إعادة ترتيب اعدادت المقابلة</value>
+  </data>
+  <data name="INVALID_INTERVIEW_SETUP" xml:space="preserve">
+    <value>يرجى تحديد مقابلة واحدة على الأقل لتتمكن من البدء في إدارة المتقدمين</value>
+  </data>
+  <data name="INVALID_CANDIDATE_INTERVIEW_TIME" xml:space="preserve">
+    <value>يوجد مقابلة اخرى لهذا المتقدم فى نفس التوقيت</value>
+  </data>
+  <data name="INVALID_INTERVIEWER_INTERVIEW_TIME" xml:space="preserve">
+    <value>يوجد مقابلة اخرى لهذا المقابل فى نفس التوقيت</value>
+  </data>
+  <data name="INVALID_INTERVIEW_SETUP_ID" xml:space="preserve">
+    <value>رقم نظام المقابلات غير صحيح</value>
+  </data>
+  <data name="INVALID_MINUTES_FOR_INTERVIEW" xml:space="preserve">
+    <value>عفوا لا تستطيع بدء مقابلة جديدة بسبب استهلاكك للدقائق المسموح بها</value>
+  </data>
+  <data name="LOCATION_REQUIRED" xml:space="preserve">
+    <value>من فضلك ادخل مكان المقابلة</value>
+  </data>
+  <data name="COLLAGE_REQUIRED" xml:space="preserve">
+    <value>لابد من إدخال الكليه</value>
+  </data>
+  <data name="CUSTOM_TITLE_REQUIRED" xml:space="preserve">
+    <value>لابدمن إدخال الوظيفه</value>
+  </data>
+  <data name="DEGREE_REQUIRED" xml:space="preserve">
+    <value>لابد من إدخال الدرجه</value>
+  </data>
+  <data name="INVALID_SALARY" xml:space="preserve">
+    <value>اختر درجة الراتب او ادخل قيمة للراتب الاساسي</value>
+  </data>
+  <data name="DUPLICATE_STAGE_NAME_Ar" xml:space="preserve">
+    <value>اسم المرحله العربى يجب ان لا يتكرر</value>
+  </data>
+  <data name="DUPLICATE_STAGE_NAME_En" xml:space="preserve">
+    <value>اسم المرحله الانجليزى يجب ان لا يتكرر</value>
+  </data>
+  <data name="INVALID_STAGE_DELETE" xml:space="preserve">
+    <value>لا يمكن حذف هذه المرحلة</value>
+  </data>
+  <data name="SELECT_ANOTHER_STAGE" xml:space="preserve">
+    <value>قم باختيار مرحلة أخرى مختلفة</value>
+  </data>
+  <data name="STAGE_HAS_APPLICATIONS" xml:space="preserve">
+    <value>هناك مرشحين في هذه المرحلة يرجى نقلهم إلى مرحلة أخرى</value>
+  </data>
+  <data name="INVALID_DELETE_PIPELINE" xml:space="preserve">
+    <value>لا يمكن حذف هذا المسار</value>
+  </data>
+  <data name="INVALID_DELETE_PIPELINE_HAS_JOBS" xml:space="preserve">
+    <value>عفوا لا تستطيع حذف هذا المسار لوجود وظائف مرتبطة به</value>
+  </data>
+  <data name="INVALID_DELETE_PIPELINE_IS_DEFAULT" xml:space="preserve">
+    <value>الرجاء اختيار مسار اساسى اخر قبل حذف هذا المسار</value>
+  </data>
+  <data name="FLOW_NAMEAR_REQUIRED" xml:space="preserve">
+    <value>يجب إدخال اسم المسار باللغه العربيه</value>
+  </data>
+  <data name="FLOW_NAMEEN_REQUIRED" xml:space="preserve">
+    <value>يجب إدخال اسم المسار باللغه الانجليزيه</value>
+  </data>
+  <data name="INVALID_REJECTION_REASON" xml:space="preserve">
+    <value>سبب الرفض غير صحيح</value>
+  </data>
+  <data name="INVALID_STAGE" xml:space="preserve">
+    <value>المرحلة غير صحيحة</value>
+  </data>
+  <data name="REQUIRED_REJECTION_REASON" xml:space="preserve">
+    <value>سبب الرفض مطلوب</value>
+  </data>
+  <data name="INVALID_STAGE_ACTION" xml:space="preserve">
+    <value>الفعل لا يوجد في هذه المرحلة</value>
+  </data>
+  <data name="INVALID_STAGE_HAS_ACTION" xml:space="preserve">
+    <value>المرحلة لها فعل</value>
+  </data>
+  <data name="INVALID_INTERVIEW_TIME" xml:space="preserve">
+    <value>وقت النهائى النهائى لابد ان يكون اكبر من وقت البدايه</value>
+  </data>
+  <data name="LAST_COMPANY_NAME" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="LAST_POSITION" xml:space="preserve">
+    <value>أخر وظيفة</value>
+  </data>
+  <data name="ATTACHMENT_IS_REQUIRED" xml:space="preserve">
+    <value>من فضلك اختر نوع الوثيقة</value>
+  </data>
+  <data name="ATTACHMENT_TITLE_DUPLICATION" xml:space="preserve">
+    <value>الوثيقة موجودة من قبل</value>
+  </data>
+  <data name="INVALID_ATTACHMENT_TYPE" xml:space="preserve">
+    <value>نوع المرفقات غير صحيح</value>
+  </data>
+  <data name="INVALIDRATE" xml:space="preserve">
+    <value>التقيم لابد ان يكون من 0  الى 100</value>
+  </data>
+  <data name="ALREADY_FILLED_FORM" xml:space="preserve">
+    <value>لقد قمت باستكمال البيانات من قبل</value>
+  </data>
+  <data name="COMPLETE_REQUIRED_ATTACHMENTS" xml:space="preserve">
+    <value>اكمل المرفقات المطلوبة</value>
+  </data>
+  <data name="NOT_SUBSCRIPED_COMPANY" xml:space="preserve">
+    <value>يجب ان تكون مشتركا لكي تفعل هذه الخاصية</value>
+  </data>
+  <data name="USERS_OVER_PLAN_LIMIT" xml:space="preserve">
+    <value>بناءا على خطة اشتراكك انت مسموح لك بعدد {0} من المستخدمين</value>
+  </data>
+  <data name="USERS_PLAN_LIMIT" xml:space="preserve">
+    <value>لقد وصلت للحد الأقصى من الوكلاء في الخطة الخاصة بكم</value>
+  </data>
+  <data name="CardIsDefault" xml:space="preserve">
+    <value>لا يمكن حذف كارد افتراضي, من فضلك قم باختيار كارد اخر افتراضي قبل الحذف</value>
+  </data>
+  <data name="InformCandidateByEmail" xml:space="preserve">
+    <value>إعلام المرشح عن طريق البريد الإلكتروني</value>
+  </data>
+  <data name="JOBS_PLAN_LIMIT" xml:space="preserve">
+    <value>لقد وصلت إلى العدد المسموح به من الوظائف، قم بالترقية لتتمكن من إدارة الوظائف الجديدة</value>
+  </data>
+  <data name="JOBS_QUOTA_LIMIT" xml:space="preserve">
+    <value>تم حفظ وظيفتك ، لكنك بلغت الحد الأقصى للوظائف المنشورة لهذا الشهر</value>
+  </data>
+  <data name="CANDIDATES_OVER_PLAN_LIMIT" xml:space="preserve">
+    <value>بناءً على خطة اشتراكك، يُسمح لك بإضافة {0} من المتقدمين</value>
+  </data>
+  <data name="CANDIDATES_PLAN_LIMIT" xml:space="preserve">
+    <value>لقد وصلت إلى الحد الأقصى في اشتراكك</value>
+  </data>
+  <data name="CANDIDATES_REMAIN_LIMIT" xml:space="preserve">
+    <value>لديك فقط {0} من المتقدمين لإضافتهم</value>
+  </data>
+  <data name="USERS_REMAIN_LIMIT" xml:space="preserve">
+    <value>لديك فقط {0} من المستخدمين لإضافتهم</value>
+  </data>
+  <data name="UPGRADE_TO_ALLOW_FEATURE" xml:space="preserve">
+    <value>قم بترقية اشتراكك للحصول على تلك الخاصية</value>
+  </data>
+  <data name="PIPELINE_PLAN_LIMIT" xml:space="preserve">
+    <value>لقد تجاوزت الحد الخاص بك. يرجى الترقية لتتمكن من إضافة وإدارة المزيد من مراحل الوظيفة</value>
+  </data>
+  <data name="CLOSING_DAYS" xml:space="preserve">
+    <value>تاريخ الإغلاق</value>
+  </data>
+  <data name="INVALID_CLOSING_DAYS" xml:space="preserve">
+    <value>ناريخ الإغلاق غير صحيح</value>
+  </data>
+  <data name="TRIAL_NOT_ALLOWED" xml:space="preserve">
+    <value>خطة اشتراكك تجريبية. غير مسموح لك بإلغاء الإشتراك</value>
+  </data>
+  <data name="PositiveBalance" xml:space="preserve">
+    <value>فرق قيمة الاشتراك بين الخطتين هو {0} ر.س</value>
+  </data>
+
+	<data name="OfferExpired" xml:space="preserve">
+    <value>إنتهت صلاحية هذا العرض</value>
+  </data>
+  <data name="ZeroBalance" xml:space="preserve">
+    <value>مدفوعاتك السابقة تغطي هذه المعاملة، فقط قم بتأكيد الاشتراك</value>
+  </data>
+  <data name="NegativeBalance" xml:space="preserve">
+    <value>مدفوعاتك السابقة تغطي هذه المعاملة وتم تحديث الحافظة، فقط قم بتأكيد الاشتراك</value>
+  </data>
+  <data name="MORE_INFO_FORM_COMPLETED" xml:space="preserve">
+    <value>النموذج تم الإجابة عليه من قبل</value>
+  </data>
+  <data name="MORE_INFO_FORM_EXPIRED" xml:space="preserve">
+    <value>النموذج منتهي الصلاحية</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_ANSWER" xml:space="preserve">
+    <value>من فضلك أجب على جميع الأسئلة</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_ANSWER_LENGTH" xml:space="preserve">
+    <value>الإجابة اطول من المطلوب</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_QUESTION" xml:space="preserve">
+    <value>سؤال غير صحيح</value>
+  </data>
+  <data name="MORE_INFO_FORM_INVALID_TYPE" xml:space="preserve">
+    <value>نوع نموذج الإجابة غير صحيح</value>
+  </data>
+  <data name="MORE_INFO_FORM_Vedio_Length" xml:space="preserve">
+    <value>مجموع عدد الدقائق اقل من او يساوي 5</value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>القيمة</value>
+  </data>
+  <data name="INVALID_END_DATE" xml:space="preserve">
+    <value>تاريخ النهاية يجب أن يكون أكبر من أو يساوي تاريخ البداية</value>
+  </data>
+  <data name="INVALID_FIXED_AMOUNT" xml:space="preserve">
+    <value>قيمة الخصم يجب أن تكون أكبر من 0 واصغر من او تساوي 9999.99</value>
+  </data>
+  <data name="INVALID_MAX_LIMIT" xml:space="preserve">
+    <value>قيمة الحد الافصى يجب أن تكون أصغر من او تساوي 9999.99</value>
+  </data>
+  <data name="INVALID_PERCENTAGE_AMOUNT" xml:space="preserve">
+    <value>قيمة الخصم يجب ان تكون أكبر من 0 واصغر من او تساوي 100</value>
+  </data>
+  <data name="INVALID_START_DATE" xml:space="preserve">
+    <value>تاريخ البداية يجب أن يكون اكبر من أو يساوي اليوم</value>
+  </data>
+  <data name="START_DATE" xml:space="preserve">
+    <value>تاريخ البداية</value>
+  </data>
+  <data name="COMPANIES" xml:space="preserve">
+    <value>الشركات</value>
+  </data>
+  <data name="InvalidPromoCode" xml:space="preserve">
+    <value>الرمز الترويجي غير صالح</value>
+  </data>
+  <data name="PROMO_CODE_TYPE" xml:space="preserve">
+    <value>نوع الرمز الترويجي</value>
+  </data>
+  <data name="EMAIL_TYPE" xml:space="preserve">
+    <value>نوع الايميل</value>
+  </data>
+  <data name="INVALID_EMAIL_TYPE" xml:space="preserve">
+    <value>نوع الايميل غير صحيح</value>
+  </data>
+  <data name="STAGE" xml:space="preserve">
+    <value>المرحلة</value>
+  </data>
+  <data name="DUPLICATE_ACCEPT_ACTION" xml:space="preserve">
+    <value>فعل القبول يجب ان يكون فى مرحله واحده فقط</value>
+  </data>
+  <data name="DUPLICATE_REJECT_ACTION" xml:space="preserve">
+    <value>فعل الرفض يجب ان يكون فى مرحله واحده فقط</value>
+  </data>
+  <data name="COVER_LETTER" xml:space="preserve">
+    <value>غلاف الرسالة</value>
+  </data>
+  <data name="TEMPLATE_AR" xml:space="preserve">
+    <value>النموذج العربي</value>
+  </data>
+  <data name="TEMPLATE_EN" xml:space="preserve">
+    <value>النموذج الانجليزي</value>
+  </data>
+  <data name="TEMPLATE" xml:space="preserve">
+    <value>النموذج</value>
+  </data>
+  <data name="REVIEW_REASON" xml:space="preserve">
+    <value>سبب المراجعة</value>
+  </data>
+  <data name="EXPIRATION_DATE" xml:space="preserve">
+    <value>تاربخ الإنتهاء</value>
+  </data>
+  <data name="INVALID_EXPIRATION_DATE" xml:space="preserve">
+    <value>تاريخ الإنتهاء غير صحيح</value>
+  </data>
+  <data name="COMPANY_SIZE" xml:space="preserve">
+    <value>حجم الشركة</value>
+  </data>
+  <data name="COMPANY_TYPE" xml:space="preserve">
+    <value>نوع الشركة</value>
+  </data>
+  <data name="INVALID_COMPANY_SIZE" xml:space="preserve">
+    <value>حجم الشركة غير صحيح</value>
+  </data>
+  <data name="INVALID_COMPANY_TYPE" xml:space="preserve">
+    <value>نوع الشركة غير صحيح</value>
+  </data>
+  <data name="OFFER_LANGUAGE" xml:space="preserve">
+    <value>لغة نموذج العرض</value>
+  </data>
+  <data name="SIGNATURE_TEMPLATE" xml:space="preserve">
+    <value>نموذج التوقيع</value>
+  </data>
+  <data name="GPA_GREATER_OUTOF" xml:space="preserve">
+    <value>المعدل التراكمي يجب ان يساوي او يقل عن المجموع</value>
+  </data>
+  <data name="INVALID_EXTEND_REQUEST" xml:space="preserve">
+    <value>تم ارسال الطلب من قبل</value>
+  </data>
+  <data name="INVALID_IMAGE_SIZE_10" xml:space="preserve">
+    <value>يجب أن لا يتعدى حجم الملف 10 ميجا بايت</value>
+  </data>
+  <data name="COMPLETE_EDUCATION_MISSING_DATA" xml:space="preserve">
+    <value>قم بإكمال جميع البيانات في المؤهل التعليمى</value>
+  </data>
+  <data name="NATIONALITY" xml:space="preserve">
+    <value>الجنسية</value>
+  </data>
+  <data name="NOT_VALID_NATIONALITY" xml:space="preserve">
+    <value>الجنسية غير صحيحة</value>
+  </data>
+  <data name="TERMS_NOT_AGREE" xml:space="preserve">
+    <value>يجب ان توافق على الشروط و الاحكام وسياسة الخصوصية و  إخلاء المسؤولية</value>
+  </data>
+  <data name="INDUSTRY" xml:space="preserve">
+    <value>مجال العمل</value>
+  </data>
+  <data name="GPA" xml:space="preserve">
+    <value>المعدل التراكمى</value>
+  </data>
+  <data name="VATNUMBER" xml:space="preserve">
+    <value>الرقم الضريبي</value>
+  </data>
+  <data name="WEBSITEURL" xml:space="preserve">
+    <value>رابط موقع الشركة</value>
+  </data>
+  <data name="INVALID_WEBSITE_URL" xml:space="preserve">
+    <value>الرجاء إدخال عنوان صالح للموقع (مثال: https://hrcom.io)</value>
+  </data>
+  <data name="ApplicantAppliedBefore" xml:space="preserve">
+    <value>لقد تقدم {0} على هذه الوظيفة من قبل</value>
+  </data>
+  <data name="IntersectionInterviewTime" xml:space="preserve">
+    <value>يوجد مقابلة اخرى لهذا المقابل ({0}) في نفس التوقيت</value>
+  </data>
+  <data name="ANNUAL_PRICE" xml:space="preserve">
+    <value>السعر سنوياً</value>
+  </data>
+  <data name="MONTH_PRICE" xml:space="preserve">
+    <value>السعر شهرياً</value>
+  </data>
+  <data name="NUM_OF_CVS" xml:space="preserve">
+    <value>عدد السير الذاتية</value>
+  </data>
+  <data name="NUM_OF_JOBS" xml:space="preserve">
+    <value>عدد الوظائف</value>
+  </data>
+  <data name="NUM_OF_MINUTES" xml:space="preserve">
+    <value>عدد الدقائق لمقابلات الفيديو</value>
+  </data>
+  <data name="NUM_OF_USERS" xml:space="preserve">
+    <value>عدد المستخدمين</value>
+  </data>
+  <data name="NUM_OF_WORKFOLW_PIPELINES" xml:space="preserve">
+    <value>عدد مسار طلبات التوظيف</value>
+  </data>
+  <data name="PAYMENT_TYPE" xml:space="preserve">
+    <value>نوع الدفع</value>
+  </data>
+  <data name="PAYMENT_TYPE_VALUES" xml:space="preserve">
+    <value>نوع الدفع يجب أن يكون شهريا أو سانويا</value>
+  </data>
+  <data name="CAN_NOT_DELETE_STANDARD_PLAN" xml:space="preserve">
+    <value>لا يمكن حذف خطة من الخطط الافتراضية</value>
+  </data>
+  <data name="CAN_NOT_DELETE_USED_PLAN" xml:space="preserve">
+    <value>لا يمكن حذف هذه الخطة انها مستخدمة بواسطة شركات</value>
+  </data>
+  <data name="STANDARD_PLANS_MUST_HAVE_ALL_PRICING" xml:space="preserve">
+    <value>الخطط الافتراضية يجب ان تحتوي على السعر شهريا وسنويا</value>
+  </data>
+  <data name="CAN_NOT_CHANGE_PAYMENT_TYPE" xml:space="preserve">
+    <value>لا يمكن تغيير طريقة الدفع لخطة لها مشتركين</value>
+  </data>
+  <data name="INVALID_OTP" xml:space="preserve">
+    <value>رمز التحقق غير صحيح</value>
+  </data>
+  <data name="OTP_IS_EXPIRE" xml:space="preserve">
+    <value>انتهت صلاحية رمز التحقيق</value>
+  </data>
+  <data name="INVLAID_HEAR_ABOUT_US" xml:space="preserve">
+    <value>كيف سمعت عنا غير صحيحة</value>
+  </data>
+  <data name="CLOSED_JOB" xml:space="preserve">
+    <value>عذرا هذه الوظيفة مغلقة ولم تعد متاحة</value>
+  </data>
+  <data name="COMPANY_NOT_FOUND" xml:space="preserve">
+    <value>الشركه غير موجودة</value>
+  </data>
+  <data name="CANDIDATE_HAS_NO_PHONE_NUMBER" xml:space="preserve">
+    <value>هذا المتقدم غير مسجل له رقم جوال</value>
+  </data>
+  <data name="VAT_NUMBER_REQUIRED" xml:space="preserve">
+    <value>الرقم الضريبي مطلوب</value>
+  </data>
+  <data name="REPLACEMENT_CATEGORY_REQUIER" xml:space="preserve">
+    <value>الموظف المستبدل مطلوب</value>
+  </data>
+  <data name="INVALID_PIPELINE_FLOW" xml:space="preserve">
+    <value>المسار غير صحيح</value>
+  </data>
+  <data name="PIPELINE_FLOW_REQUIRED" xml:space="preserve">
+    <value>يجب اختيار المسار</value>
+  </data>
+  <data name="PUBLISHED_JOBS_QUOTA_FINISHED" xml:space="preserve">
+    <value>تم حفظ وظيفتك ، لكنك بلغت الحد الأقصى للوظائف المنشورة لهذا الشهر</value>
+  </data>
+  <data name="LOGIN_TOKEN_EXPIRED" xml:space="preserve">
+    <value>انتهت الجلسة بسبب عدم النشاط</value>
+  </data>
+  <data name="CANDIDATE_ID" xml:space="preserve">
+    <value>هوية المتقدم</value>
+  </data>
+  <data name="CANDIDATE_NOT_FOUND" xml:space="preserve">
+    <value>المتقدم غير موجود</value>
+  </data>
+  <data name="PLAN_HAS_NO_BRAND_JOB_POST_FEATURE" xml:space="preserve">
+    <value>تصميم منشور إعلانات وظائف الشركة غير متاح في خطة اشتراكك</value>
+  </data>
+  <data name="PLAN_HAS_NO_SEND_EMAIL_FEATURE" xml:space="preserve">
+    <value>إرسال بريد الكتروني غير متاح في خطة اشتراكك</value>
+  </data>
+  <data name="PLAN_HAS_NO_SEND_OFFER_FEATURE" xml:space="preserve">
+    <value>إرسال نموذج العرض غير متاح في خطة اشتراكك</value>
+  </data>
+  <data name="WEBSITE_URL_IS_REQUIRED" xml:space="preserve">
+    <value>رابط موقع الشركة مطلوب</value>
+  </data>
+  <data name="DUPLICATE_LOGIN_PROVIDER_DATA" xml:space="preserve">
+    <value>بيانات تسجيل الدخول موجودة مع حساب آخر</value>
+  </data>
+  <data name="INVALID_LOGIN_DATA" xml:space="preserve">
+    <value>بيانات الدخول غير صحيحة</value>
+  </data>
+  <data name="TEMPLATE_REMOVED" xml:space="preserve">
+    <value>تم حذف هذا النموذج ، يرجى إضافته كنموذج جديد</value>
+  </data>
+  <data name="DEVICE_ID" xml:space="preserve">
+    <value>هوية الجهاز</value>
+  </data>
+  <data name="DEVICE_TOKEN" xml:space="preserve">
+    <value>رمز الجهاز</value>
+  </data>
+  <data name="SYSTEM_NAME" xml:space="preserve">
+    <value>اسم النظام</value>
+  </data>
+  <data name="COMPANY_IS_UNVERIFIED" xml:space="preserve">
+    <value>هذه الشركة غيرمثبته، الرجاء الاتصال بنا من خلال الايميل info@hrcom.io</value>
+  </data>
+  <data name="INVALID_DOMAIN_NAME" xml:space="preserve">
+    <value>هذا النطاق غير صالح</value>
+  </data>
+  <data name="INVALID_FILE_SIZE5" xml:space="preserve">
+    <value>يجب أن لا يتعدى حجم الملف 10 ميجا بايت</value>
+  </data>
+  <data name="INVALID_LINK" xml:space="preserve">
+    <value>هذا الرابط غير صحيح</value>
+  </data>
+  <data name="OFFER_SUBMITTED_BEFORE" xml:space="preserve">
+    <value>لقد قمت بتقديم هذا النموذج من قبل, شكرا لك</value>
+  </data>
+  <data name="PLATFORM" xml:space="preserve">
+    <value>المنصة</value>
+  </data>
+  <data name="REFRESH_TOKEN" xml:space="preserve">
+    <value>رمز التحديث</value>
+  </data>
+  <data name="AGENT_HAS_SYNC_EMAIL" xml:space="preserve">
+    <value>المستخدم لديه بريد الكتروني مربوط من قبل</value>
+  </data>
+  <data name="USED_REJECTION_REASON" xml:space="preserve">
+    <value>لا يمكن حذف هذا السبب لقد تم استخدامه من قبل</value>
+  </data>
+  <data name="CONTRACTOR_REJECTED_BY_USER" xml:space="preserve">
+    <value>نأسف هذا العقد غير متاح حاليً</value>
+  </data>
+  <data name="INVALIDMEDSALARYNUMBER" xml:space="preserve">
+    <value>الحد المتوسط للمرتب غير صحيح</value>
+  </data>
+  <data name="INVALIDMEDSALARYRANG" xml:space="preserve">
+    <value>الحد المتوسط للمرتب يجب ان يكون بين 0.00 و 99999999</value>
+  </data>
+  <data name="INVALID_MED_SALARY" xml:space="preserve">
+    <value>الحد المتوسط للأجر يجب ان يكون أكبر من الحد الأدنى وأقل من الحد الأقصى</value>
+  </data>
+  <data name="MEDSALARY" xml:space="preserve">
+    <value>الحد المتوسط للمرتب</value>
+  </data>
+  <data name="EXCEL_INVALID_MED_SALARY" xml:space="preserve">
+    <value>تم تخطي الصفوف {0} لأن الحد المتوسط للأجر يجب ان يكون أكبر من الحد الأدنى وأقل من الحد الأقصى</value>
+  </data>
+  <data name="OFFER_VALUE" xml:space="preserve">
+    <value>قيمة العرض الوظيفي</value>
+  </data>
+  <data name="EXCEED_PARENT_LEVEL_LIMIT" xml:space="preserve">
+    <value>لقد بلغت الحد الاقصى من عدد التفريعات</value>
+  </data>
+  <data name="INVALID_PARENT_JOB_TITLE" xml:space="preserve">
+    <value>قيمة المسمى الوظيفى الأب غير صحيحة</value>
+  </data>
+  <data name="INVALID_JOB_TITLE_DELETE" xml:space="preserve">
+    <value>لا يمكن مسح هذه الوظيفة لانها مستخدمة بالنظام</value>
+  </data>
+  <data name="DEPARTMENT_NAME_DUBLICATION" xml:space="preserve">
+    <value>هذا القسم موجود من قبل، من فضلك اختر اسم اخر</value>
+  </data>
+  <data name="INVALID_HEAD_AGENT" xml:space="preserve">
+    <value>مستخدم رئيس القسم غير صحيح</value>
+  </data>
+  <data name="INVALID_HIRING_AGENT" xml:space="preserve">
+    <value>مستخدم مدير التوظيف غير صحيح</value>
+  </data>
+  <data name="INVALID_PARENT_DEPARTMENT" xml:space="preserve">
+    <value>قيمة القسم الأب غير صحيحة</value>
+  </data>
+  <data name="INVALID_Department_DELETE" xml:space="preserve">
+    <value>لا يمكن مسح هذا القسم لانه مستخدم بالنظام</value>
+  </data>
+  <data name="APPROVAL_ACTION" xml:space="preserve">
+    <value>إجراء الموافقة</value>
+  </data>
+  <data name="APPROVAL_TYPE" xml:space="preserve">
+    <value>نوع الموافقة</value>
+  </data>
+  <data name="APPROVED_BY" xml:space="preserve">
+    <value>الموافقة بواسطة</value>
+  </data>
+  <data name="CHOOSE_ROLE_OR_TITLE" xml:space="preserve">
+    <value>اختر مسمى وظيفي أو دور وظيفي</value>
+  </data>
+  <data name="JOB_APPROVAL_STAGE" xml:space="preserve">
+    <value>مرحلة موافقة الوظيفة</value>
+  </data>
+  <data name="ORDER" xml:space="preserve">
+    <value>الترتيب</value>
+  </data>
+  <data name="SALARY_GRADES" xml:space="preserve">
+    <value>سلم الرواتب</value>
+  </data>
+  <data name="SALARY_RANGES" xml:space="preserve">
+    <value>نطاق الرواتب</value>
+  </data>
+  <data name="INVALID_APPROVAL_TYPE_WITH_ACTION" xml:space="preserve">
+    <value>نوع الموافقة غير صحيح مع الإجراء</value>
+  </data>
+  <data name="INVALID_APPROVED_BY_COUNT" xml:space="preserve">
+    <value>عدد المطلوبين للموافقة يجب أن يكون أقل من أو يساوي 6</value>
+  </data>
+  <data name="DUPLICATED_SALARY_GRADE" xml:space="preserve">
+    <value>لا يمكن تكرار سلم الراتب للإجراء</value>
+  </data>
+  <data name="DUPLICATE_APPROVED_BY" xml:space="preserve">
+    <value>لا يمكن تكرار الاشخاص المطلوب منهم الموافقة في الاجراء الواحد</value>
+  </data>
+  <data name="DUPLICATE_ORDER" xml:space="preserve">
+    <value>لا يمكن تكرار ترتيب الاشخاص المطلوب منهم الموافقة في الاجراء الواحد </value>
+  </data>
+  <data name="DUPLICATE_SALARY_RANGE" xml:space="preserve">
+    <value>لا يمكن تكرار نطاق الراتب للإجراء </value>
+  </data>
+  <data name="DUPLICATED_DEPARTMENT_TYPE" xml:space="preserve">
+    <value>لا يمكن تكرار نوع الموافقة (القسم) مع نفس الإجراء</value>
+  </data>
+  <data name="DUPLICATE_APPROVAL_ACTION" xml:space="preserve">
+    <value> لا يمكن تكرار نفس الإجراء أكثر من مرة</value>
+  </data>
+  <data name="SALARY_GRADES_REQUIRED" xml:space="preserve">
+    <value>يجب إختيار سلم الرواتب</value>
+  </data>
+  <data name="SALARY_RANGES_REQUIRED" xml:space="preserve">
+    <value>يجب إختيار نظاق الرواتب</value>
+  </data>
+  <data name="InvalidPublishingDays" xml:space="preserve">
+    <value>تاريخ النشرغير صحيح</value>
+  </data>
+  <data name="USER_ASSIGN_TO_DEPARTMENT" xml:space="preserve">
+    <value>المستخدم مسند له أقسام، من فضلك قم باستبداله أولا</value>
+  </data>
+  <data name="EMPTY_EXCEL_FILE" xml:space="preserve">
+    <value>ملف الأكسل لا يحتوي على بيانات</value>
+  </data>
+  <data name="EXCEL_FILE_ONLY" xml:space="preserve">
+    <value>مسموح فقط بملفات أكسل</value>
+  </data>
+  <data name="EXCEL_INVALID_ROW_DATA" xml:space="preserve">
+    <value>تم تخطي الصف {0} لأنه يحتوي على بيانات غير صالحة</value>
+  </data>
+  <data name="EXCEL_REQUIRED_ROW_DATA" xml:space="preserve">
+    <value>تم تخطي الصف {0} لأنه يفتقد بيانات مطلوبة</value>
+  </data>
+  <data name="NOT_VALID_DEPARTMENT" xml:space="preserve">
+    <value>القسم المحدد غير موجود رجاء التحقق منه</value>
+  </data>
+  <data name="NOT_VALID_JOBTITLE" xml:space="preserve">
+    <value>المسمى الوظيفي المحدد غير موجود رجاء التحقق منه</value>
+  </data>
+  <data name="MULTIPLE_APPROVAL_SETUP" xml:space="preserve">
+    <value>غير مسموح بتعدد الاعتمادات الوظيفية للنوع قسم</value>
+  </data>
+  <data name="NOT_VALID_DIRECTMANGER" xml:space="preserve">
+    <value>المدير المباشر المحدد غير موجود رجاء التحقق منه</value>
+  </data>
+  <data name="INVALID_EMAIL_DOMAIN" xml:space="preserve">
+    <value>يجب أن يكون المستخدم داخل نطاق أداء</value>
+  </data>
+  <data name="REQUIRED_OTP_CODE" xml:space="preserve">
+    <value>رمز التحقق مطلوب</value>
+  </data>
+  <data name="EXCEL_ADD_AGENT_ERRORS" xml:space="preserve">
+    <value>العميل رقم {0} تم حذفه لأن {1}</value>
+  </data>
+  <data name="AGENT_PASSWORD_LENGTH" xml:space="preserve">
+    <value>يجب ألا يقل طول كلمة المرور عن 15 حرف</value>
+  </data>
+  <data name="PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value>يجب أن تحتوي كلمة المرور على حرف خاص واحد على الأقل</value>
+  </data>
+  <data name="RATE_OR_NOTE_REQUIRED" xml:space="preserve">
+    <value>الرجاء إدخال قيمة واحده على الأقل</value>
+  </data>
+  <data name="INVALID_PUBLISHING_DATE" xml:space="preserve">
+    <value>تاريخ النشر غير قابل التعديل</value>
+  </data>
+  <data name="TWO_FACTOR_TOKEN" xml:space="preserve">
+    <value>رمز التوثيق الثنائي</value>
+  </data>
+  <data name="INVALID_TWO_FACTOR_TOKEN" xml:space="preserve">
+    <value>رمز التوثيق الثنائي غير صحيح</value>
+  </data>
+  <data name="ALLOWANCE_TYPE" xml:space="preserve">
+    <value>نوع لبدل</value>
+  </data>
+  <data name="DUPLICATE_ALLOWANCE_TYPE" xml:space="preserve">
+    <value>نوع البدل مكرر</value>
+  </data>
+  <data name="ALLOWANCES" xml:space="preserve">
+    <value>البدلات</value>
+  </data>
+  <data name="ALLOWANCE_VALUE" xml:space="preserve">
+    <value>نسبة البدل</value>
+  </data>
+  <data name="MISSING_ALLOWANCES" xml:space="preserve">
+    <value>هناك أنواع من البدلات غير محددة</value>
+  </data>
+  <data name="EXCEL_INVALID_CURRENCY" xml:space="preserve">
+    <value>تم تخطي الصف {0} لأنه يحتوي على عملة غير صحيحة</value>
+  </data>
+  <data name="ALLOWANCE_NOT_EXCEED_BASIC" xml:space="preserve">
+    <value>القيمة يجب ان لا تتعدى الحد الأدني من أساسي المرتب</value>
+  </data>
+  <data name="INVALID_JOB_ROLE" xml:space="preserve">
+    <value>الدور الوظيفي غير صحيح</value>
+  </data>
+  <data name="PERMISSION" xml:space="preserve">
+    <value>الصلاحية</value>
+  </data>
+  <data name="MISSING_PERMISSIONS" xml:space="preserve">
+    <value>هناك صلاحيات غير موجودة</value>
+  </data>
+  <data name="DUPLICATE_PERMISSIONS" xml:space="preserve">
+    <value>هناك صلاحيات متكررة</value>
+  </data>
+  <data name="SEND_INTERVAL" xml:space="preserve">
+    <value>الفاصل الزمني لإرسال البريد الإلكتروني</value>
+  </data>
+  <data name="COMPLETE_PERCENTAGE_EVALUATIONS" xml:space="preserve">
+    <value>أضف جميع تقييمات النسبة المئوية</value>
+  </data>
+  <data name="PERCENTAGE_EVALUATIONS_COUNT" xml:space="preserve">
+    <value>عدد التقييمات بالنسبة يجب أن يساوي 3</value>
+  </data>
+  <data name="STARS_EVALUATIONS" xml:space="preserve">
+    <value>التقييم بالنجوم</value>
+  </data>
+  <data name="STARS_EVALUATIONS_COUNT" xml:space="preserve">
+    <value>عدد التقييمات بالنجوم  يجب ان يكون بين 1 و 14</value>
+  </data>
+  <data name="CANDIDATE_EVALUATION_STATUS" xml:space="preserve">
+    <value>حالة تقييم المرشح</value>
+  </data>
+  <data name="CANDIDATE_STATUS" xml:space="preserve">
+    <value>حضور المتقدم</value>
+  </data>
+  <data name="COMPLETE_STARS_EVALUATIONS" xml:space="preserve">
+    <value>أضف جميع تقييمات النجوم</value>
+  </data>
+  <data name="DUPLICATE_PERCENTAGE_EVALUATIONS" xml:space="preserve">
+    <value>تقييمات النسبة المئوية مكررة</value>
+  </data>
+  <data name="DUPLICATE_STARS_EVALUATIONS" xml:space="preserve">
+    <value>تقييمات النجوم مكررة</value>
+  </data>
+  <data name="EVALUATION_PERCENTAGE_VALUE" xml:space="preserve">
+    <value>قيمة النسبة المئوية للتقييم</value>
+  </data>
+  <data name="EVALUATION_STARS_VALUE" xml:space="preserve">
+    <value>قيمة نجوم التقييم</value>
+  </data>
+  <data name="INVALID_INTERVIEW_EVALUATION_ID" xml:space="preserve">
+    <value>الرقم التعريفي لتقييم المقابلة غير صحيح</value>
+  </data>
+
+	<data name="CHECK_REQUIREDFIELDS" xml:space="preserve">
+    <value>برجاء إستكمال ملفك الشخصي للتقديم علي هذه الوظيفة</value>
+  </data>
+
+
+	<data name="JOB_DESCRIPTION_AR" xml:space="preserve">
+    <value>الوصف الوظيفي بالعربي</value>
+  </data>
+  <data name="JOB_DESCRIPTION_EN" xml:space="preserve">
+    <value>الوصف الوظيفي بالانجليزي</value>
+  </data>
+  <data name="COMPETENCE_LEVELS" xml:space="preserve">
+    <value>مستويات الجدارة</value>
+  </data>
+  <data name="COMPETENCE_LEVELS_ONE_SHOWN" xml:space="preserve">
+    <value>يجب إظهار على الأقل مستوى جدارة واحد</value>
+  </data>
+  <data name="COMPETENCE_LEVEL_ID" xml:space="preserve">
+    <value>رقم مستوى الجدارة</value>
+  </data>
+  <data name="INVALID_COMPETENCE_LEVELS" xml:space="preserve">
+    <value>مستوى الجدارة غير صحيح</value>
+  </data>
+  <data name="COMPETENCE_CATEGORY_ID" xml:space="preserve">
+    <value>فئة الجدارات</value>
+  </data>
+  <data name="DUPLICATE_COMPETENCE_CATEGORY" xml:space="preserve">
+    <value>تم إضافة هذه الفئه من قبل</value>
+  </data>
+  <data name="DUPLICATE_COMPETENCE_ITEM" xml:space="preserve">
+    <value>تمت إضافة هذه الجدارة من قبل</value>
+  </data>
+  <data name="DUPLICATE_COMPETENCE_LEVEL" xml:space="preserve">
+    <value>اسم المستوى متكرر</value>
+  </data>
+  <data name="INVALID_COMPETENCE_CATEGORY" xml:space="preserve">
+    <value>فئة الجدارة غير صحيحة</value>
+  </data>
+  <data name="CAN_NOT_DELETE_COMPETENCE_ITEM" xml:space="preserve">
+    <value>لا يمكن حذفه، هذا العنصر قيد الاستخدام مع تدرج وظيفي</value>
+  </data>
+  <data name="CAN_NOT_DUPLICATE_COMPETENCE_ITEM" xml:space="preserve">
+    <value>هناك جدارات مكررة أكثر من مرة</value>
+  </data>
+  <data name="COMPETENCE_ITEM" xml:space="preserve">
+    <value>الجدارة</value>
+  </data>
+  <data name="COMPETENCE_LEVEL" xml:space="preserve">
+    <value>مستوى الجدارة</value>
+  </data>
+  <data name="ENTER_COMPETENCE_LEVELS_AND_ITEMS" xml:space="preserve">
+    <value>قم بإدخال الجدارة ومستويات الجدارة</value>
+  </data>
+  <data name="INVALID_COMPETENCE_ITEMS" xml:space="preserve">
+    <value>قيم الجدارات غير صحيحة</value>
+  </data>
+  <data name="CAN_NOT_DELETE_TEMPLATE" xml:space="preserve">
+    <value>لا يمكن حذف هذا النوع من النماذج</value>
+  </data>
+  <data name="JOB_REQUEST_IS_HOLD" xml:space="preserve">
+    <value>حالة الوظيفة معلقة</value>
+  </data>
+  <data name="JOB_REQUEST_IS_PENDING" xml:space="preserve">
+    <value>حالة الوظيفة قيد الانتظار</value>
+  </data>
+  <data name="NOT_VALID_FILE_SIZE" xml:space="preserve">
+    <value>حجم الملف غير صحيح الحجم المسموح به {0} ميجا</value>
+  </data>
+  <data name="NOT_VALID_FILE_TYPE" xml:space="preserve">
+    <value>نوع الملف غير صحيح نوع الملف المسموح به {0}</value>
+  </data>
+  <data name="TEMPLATE_TYPE" xml:space="preserve">
+    <value>نوع النموذج</value>
+  </data>
+  <data name="TEMPLATE_TYPE_ALREADY_EXIST" xml:space="preserve">
+    <value>نوع هذا النموذج موجود من قبل</value>
+  </data>
+  <data name="SMS_LANGUAGE" xml:space="preserve">
+    <value>لغة رسالة SMS</value>
+  </data>
+  <data name="APPLICATION_ID" xml:space="preserve">
+    <value>هوية طلب التوظيف</value>
+  </data>
+  <data name="CANDIDATE_LIST" xml:space="preserve">
+    <value>قائمة المتقدمين</value>
+  </data>
+  <data name="INVALID_MICROSOFT_ACCOUNT" xml:space="preserve">
+    <value>من فضلك اختر مستخدم لديه حساب على مايكروسوفت</value>
+  </data>
+  <data name="MEETING_PLATFORM" xml:space="preserve">
+    <value>منصة الاجتماعات</value>
+  </data>
+  <data name="ALLOWANCE_NAME_REQUIRED" xml:space="preserve">
+    <value>يجب ادخال اسماء المستحقات المالية</value>
+  </data>
+  <data name="NATIONALITY_VACATION_ADDED_BEFORE" xml:space="preserve">
+    <value>تم إضافة رصيد اجازات لهذه الجنسيه و المستوي الوظيفي من قبل</value>
+  </data>
+  <data name="VACATION_BALANCE" xml:space="preserve">
+    <value>رصيد الاجازات</value>
+  </data>
+  <data name="DOCUMENT_NAME_DUPLICATE" xml:space="preserve">
+    <value>اسم الملف موجود بالفعل</value>
+  </data>
+</root>
