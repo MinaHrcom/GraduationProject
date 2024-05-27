@@ -25,8 +25,8 @@ namespace CompanyAPIs.Controllers
             _documentService = documentService;
         }
 
-        //[Authorize(Roles = "admin")]
         [HttpPost("AddEdit_Document")]
+       // [Authorize(Roles = "admin")]
         public async Task<IActionResult> Adddocument([FromBody] DocumentsDTO model)
         {
 
@@ -52,7 +52,7 @@ namespace CompanyAPIs.Controllers
         }
 
 
-        [HttpPost("document/{id}")]
+        [HttpPost("Deletedocument/{id}")]
         [ProducesResponseType(typeof(SuccessResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> Deletedocument(Guid id)
@@ -112,6 +112,81 @@ namespace CompanyAPIs.Controllers
                     {
                         Message = result.ErrorMessageKey
                     }
+                });
+            }
+            else
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+        }
+
+
+
+
+
+        /// <summary>
+        /// Delete pending job request
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <returns></returns>
+        [HttpGet("UserDocument")]
+        [ProducesResponseType(typeof(DataResponse<DocumentsDTO>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
+
+
+        public async Task<IActionResult> GetUserDocuments(Guid UserId)
+        {
+            var result = await _documentService.GetUserDocuments(UserId);
+
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return Ok(new DataResponse<DocumentsDTO>
+                {
+                    Data = result.Data
+                });
+            }
+            else if (result.StatusCode == HttpStatusCode.NotFound)
+            {
+                return NotFound(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+            else
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+
+        }
+
+
+        [HttpPost("AddPayment")]
+        // [Authorize(Roles = "admin")]
+        public async Task<IActionResult> AddPayment([FromBody] OperationPayment model)
+        {
+
+            var result = await _documentService.AddPayment(model);
+
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return Ok(new DataResponse<string>
+                {
+                    Data = result.Data
                 });
             }
             else

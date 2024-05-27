@@ -9,6 +9,9 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using CompanyAPIs.Services;
 using Microsoft.AspNetCore.Authorization;
+using HRCom.Domain.BaseTypes;
+using System.Net;
+using Microsoft.AspNetCore.Identity;
 
 namespace CompanyAPIs.Controllers
 {
@@ -63,6 +66,86 @@ namespace CompanyAPIs.Controllers
                 return BadRequest(result);
 
             return Ok(model);
+        }
+
+
+        [HttpGet("Ships")]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(DataResponse<List<Ships>>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> GetShips()
+        {
+            var result = await _authService.GetShips();
+
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return Ok(new DataResponse<List<Ships>>
+                {
+                    Data = result.Data
+                });
+            }
+            else if (result.StatusCode == HttpStatusCode.NotFound)
+            {
+                return NotFound(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+            else
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+        }
+
+
+
+
+
+        [HttpGet("Users")]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(DataResponse<List<UsersDTO>>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> GetUsersInRole()
+        {
+
+            var result = await _authService.GetUsersInRole();
+
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return Ok(new DataResponse<List<UsersDTO>>
+                {
+                    Data = result.Data
+                });
+            }
+            else if (result.StatusCode == HttpStatusCode.NotFound)
+            {
+                return NotFound(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+            else
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
         }
 
 

@@ -41,7 +41,7 @@ namespace CompanyAPIs.Services
         {
             var result = new OperationResult<string>();
 
-            var DocumentRequest = new Documents();
+            var DocumentRequest = new Models.Documents();
 
             if (model.ID != null)
             {
@@ -66,7 +66,9 @@ namespace CompanyAPIs.Services
             }
             else // Add Mode
             {
-                DocumentRequest = new Documents
+
+
+                DocumentRequest = new Models.Documents
                 {
                     Name = model.Name,
                     ShipID = model.ShipID,
@@ -89,7 +91,42 @@ namespace CompanyAPIs.Services
           
             result.StatusCode = HttpStatusCode.OK;
             return result;
+        }     
+        
+        
+        
+        
+        public async Task<OperationResult<string>> AddPayment(OperationPayment model)
+        {
+
+            var result = new OperationResult<string>();
+
+            var PaymentRequest = new Models.OperationPayment();
+
+            var operation = await _applicationDbContext.Operation.Where(x => x.ID == model.OperationID).FirstOrDefaultAsync();
+
+            operation.IsPaid = true;
+
+            PaymentRequest = new Models.OperationPayment
+            {
+                    OperationID = model.OperationID,
+                    PaymentValue = model.PaymentValue
+            };
+
+             _applicationDbContext.Operation_Payment.Add(PaymentRequest);
+             await _applicationDbContext.SaveChangesAsync();
+
+            result.Data = PaymentRequest.ID.ToString();
+
+            result.StatusCode = HttpStatusCode.OK;
+            return result;
+        
         }
+
+
+
+          
+        
 
 
         public async Task<OperationResult<bool>> Deletedocument(Guid id)
@@ -119,7 +156,7 @@ namespace CompanyAPIs.Services
 
         public async Task<OperationResult<DocumentsDTO>> GetDocument(Guid id)
         {
-            var Document = await _applicationDbContext.Document.Where(x=> x.ID == id).FirstOrDefaultAsync();
+            var Document = await _applicationDbContext.Document.Where(x=> x.ID == id && x.IsDeleted != true).FirstOrDefaultAsync();
 
             
 
@@ -141,7 +178,9 @@ namespace CompanyAPIs.Services
                         ContainerNumber = Document.ContainerNumber,
                         OperationID = Document.OperationID,
                         ShipID = Document.ShipID,
-                        VoyageNumber = Document.VoyageNumber
+                        VoyageNumber = Document.VoyageNumber,
+                       IsDelete = Document.IsDeleted
+                        
 
 
                 },
@@ -150,6 +189,33 @@ namespace CompanyAPIs.Services
         }
 
 
+        public async Task<OperationResult<DocumentsDTO>> GetUserDocuments(Guid UserId)
+        {
+            OperationResult<DocumentsDTO> result =
+                new OperationResult<DocumentsDTO>();
+
+
+            var  userId = _userDataProvider.GetUserId().ToString();
+
+            var OperationId = _applicationDbContext.Operation.Where(x=> x.UserId == userId).Select(x=> x.ID).FirstOrDefault();
+
+            var Document = _applicationDbContext.Document.Where(x => x.OperationID == OperationId && x.IsDeleted != true).FirstOrDefault();
+
+
+            var DocumentObj = new DocumentsDTO();
+
+            DocumentObj.ID = Document.ID;
+            DocumentObj.VoyageNumber = Document.VoyageNumber;
+            DocumentObj.ContainerNumber = Document.ContainerNumber;
+            DocumentObj.OperationID = Document.OperationID;
+            DocumentObj.ShipID = Document.ShipID;
+            DocumentObj.Name = Document.Name;
+          DocumentObj.IsDelete = Document.IsDeleted;
+
+            result = DocumentObj;
+            result.StatusCode = HttpStatusCode.OK;
+            return result;
+        }
 
 
     }

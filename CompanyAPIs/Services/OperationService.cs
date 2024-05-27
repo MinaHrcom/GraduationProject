@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualBasic;
+using NuGet.Protocol.Core.Types;
 using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
@@ -43,6 +44,8 @@ namespace CompanyAPIs.Services
 
             var OperationsRequest = new Operations();
 
+            var UserId = _userDataProvider.GetUserId();
+
             if (model.ID != null)
             {
 
@@ -58,8 +61,9 @@ namespace CompanyAPIs.Services
                 OperationDb.TotalWeight = model.TotalWeight;
                 OperationDb.UserId = model.UserId;
                 OperationDb.UpdatedAt = DateTime.Now;
-                OperationDb.IsDeleted = false;
-
+                OperationDb.IsDeleted = model.IsDeleted;
+                OperationDb.IsPaid = model.IsPaid;
+                OperationDb.EmployeeUserId = model.EmployeeId;
                 await _applicationDbContext.SaveChangesAsync();
 
                 result.Data = model.ID.ToString();
@@ -73,12 +77,14 @@ namespace CompanyAPIs.Services
                     Name = model.Name,
                     NumberOfCases = model.NumberOfCases,
                     PortOfLoading = model.PortOfLoading,
-                    IsDeleted = model.IsDeleted,
+                    IsDeleted = false,
                     PortOfDistance = model.PortOfDistance,
                     NumberOfUnits = model.NumberOfUnits,
                     TotalWeight = model.TotalWeight,
                     UserId = model.UserId,
                     CreatedAt = DateTime.Now,
+                    IsPaid = false,
+                    EmployeeUserId = model.EmployeeId,
 
                 };
 
@@ -125,9 +131,9 @@ namespace CompanyAPIs.Services
 
         public async Task<OperationResult<OperationDTO>> GetOperation(Guid id)
         {
-            var Operation = await _applicationDbContext.Operation.Where(x=> x.ID == id).FirstOrDefaultAsync();
-
-            var User = _userDataProvider.GetUserId();
+            var Operation = await _applicationDbContext.Operation
+                                                    .Where(o => o.ID == id)
+                                                    .FirstOrDefaultAsync();
 
             if (Operation == null)
             {
@@ -138,26 +144,112 @@ namespace CompanyAPIs.Services
                 };
             }
 
-            return new OperationResult<OperationDTO>
-            {
-                Data = new OperationDTO
-                {
-                        ID = Operation.ID,
-                        Name = Operation.Name,  
-                        NumberOfCases = Operation.NumberOfCases,
-                        NumberOfUnits = Operation.NumberOfUnits,    
-                        PortOfDistance = Operation.PortOfDistance,
-                        PortOfLoading = Operation.PortOfLoading,
-                        UserId = Operation.UserId,
-                        CreatedBy = Operation.CreatedBy,
-                        CreatedAt = Operation.CreatedAt,
-                        TotalWeight = Operation.TotalWeight,
-                        IsDeleted = Operation.IsDeleted
+            var document = await _applicationDbContext.Document
+                                                       .Where(d => d.OperationID == id)
+                                                       .FirstOrDefaultAsync();
 
-                },
+
+
+
+
+            var operationDTO = new OperationDTO
+            {
+                ID = Operation.ID,
+                Name = Operation.Name,
+                NumberOfCases = Operation.NumberOfCases,
+                NumberOfUnits = Operation.NumberOfUnits,
+                PortOfDistance = Operation.PortOfDistance,
+                PortOfLoading = Operation.PortOfLoading,
+                UserId = Operation.UserId,
+                CreatedBy = Operation.CreatedBy,
+                CreatedAt = Operation.CreatedAt,
+                TotalWeight = Operation.TotalWeight,
+                IsDeleted = Operation.IsDeleted,
+                IsPaid = Operation.IsPaid,
+                EmployeeId = Operation.EmployeeUserId,
+                Documents = document != null ? new Dtos.Documents
+                {
+                    ID = document.ID,
+                    OperationID = document.OperationID,
+                    Name = document.Name,
+                    VoyageNumber = document.VoyageNumber,
+                    ContainerNumber = document.ContainerNumber,
+                    ShipID = document.ShipID,
+                    IsDeleted = document.IsDeleted
+                    
+                } : null
+            };
+
+                 return new OperationResult<OperationDTO>
+                 {
+                     Data = operationDTO,
+                     StatusCode = HttpStatusCode.OK
+                 };
+        }
+
+
+
+        public async Task<OperationResult<List<OperationDTO>>> GetUserOperations(Guid UserId)
+        {
+            var operations = await _applicationDbContext.Operation
+                                                 .Where(o => o.UserId == UserId.ToString() || o.EmployeeUserId == UserId.ToString())
+                                                 .ToListAsync();
+
+            if (operations == null || !operations.Any())
+            {
+                return new OperationResult<List<OperationDTO>>
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    Data = null
+                };
+            }
+
+            var operationDTOs = new List<OperationDTO>();
+
+            foreach (var operation in operations)
+            {
+                var document = await _applicationDbContext.Document
+                                                             .Where(d => d.OperationID == operation.ID)
+                                                             .FirstOrDefaultAsync();
+
+                var operationDTO = new OperationDTO
+                {
+                    ID = operation.ID,
+                    Name = operation.Name,
+                    NumberOfCases = operation.NumberOfCases,
+                    NumberOfUnits = operation.NumberOfUnits,
+                    PortOfDistance = operation.PortOfDistance,
+                    PortOfLoading = operation.PortOfLoading,
+                    UserId = operation.UserId,
+                    CreatedBy = operation.CreatedBy,
+                    CreatedAt = operation.CreatedAt,
+                    TotalWeight = operation.TotalWeight,
+                    IsDeleted = operation.IsDeleted,
+                    IsPaid = operation.IsPaid,
+                    EmployeeId = operation.EmployeeUserId,
+                    Documents = document != null ? new Dtos.Documents
+                    {
+                        ID = document.ID,
+                        OperationID = document.OperationID,
+                        Name = document.Name,
+                        VoyageNumber = document.VoyageNumber,
+                        ContainerNumber = document.ContainerNumber,
+                        ShipID = document.ShipID,
+                        IsDeleted = document.IsDeleted
+                    } : null
+                };
+
+                operationDTOs.Add(operationDTO);
+            }
+
+            return new OperationResult<List<OperationDTO>>
+            {
+                Data = operationDTOs,
                 StatusCode = HttpStatusCode.OK
             };
+
         }
+
 
 
 

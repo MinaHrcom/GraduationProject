@@ -3,35 +3,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CompanyAPIs.Models
 {
-    public class Documents
+    public class OperationPayment
     {
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid ID { get; set; }
 
-        [ForeignKey("Operation")]
         public Guid OperationID { get; set; }
-
+        
         [Required]
-        public string Name { get; set; }
-
-        public int VoyageNumber { get; set; }
-
-        public int ContainerNumber { get; set; }
-
-        [ForeignKey("Ship")]
-        public Guid ShipID { get; set; }
-
+        public int PaymentValue { get; set; }
         public bool IsDeleted { get; set; } = false;
-
         public Guid? CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; }
         public Guid? UpdatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
-
-        public Operations Operation { get; set; }
-
-        public Ships Ship { get; set; }
     }
 }

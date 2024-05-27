@@ -11,6 +11,7 @@ using CompanyAPIs.Services;
 using Microsoft.AspNetCore.Authorization;
 using HRCom.Domain.BaseTypes;
 using System.Net;
+using System.Collections.Generic;
 
 namespace CompanyAPIs.Controllers
 {
@@ -52,7 +53,7 @@ namespace CompanyAPIs.Controllers
         }
 
 
-        [HttpPost("Operation/{id}")]
+        [HttpPost("DeleteOperation/{id}")]
         [ProducesResponseType(typeof(SuccessResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> DeleteOperation(Guid id)
@@ -100,6 +101,47 @@ namespace CompanyAPIs.Controllers
             if (result.StatusCode == HttpStatusCode.OK)
             {
                 return Ok(new DataResponse<OperationDTO>
+                {
+                    Data = result.Data
+                });
+            }
+            else if (result.StatusCode == HttpStatusCode.NotFound)
+            {
+                return NotFound(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+            else
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+        }
+
+
+
+
+
+        [HttpGet("UserOperation/{UserId}")]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(DataResponse<List<OperationDTO>>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> GetUserOperations(Guid UserId)
+        {
+            var result = await _operationService.GetUserOperations(UserId);
+
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return Ok(new DataResponse<List<OperationDTO>>
                 {
                     Data = result.Data
                 });

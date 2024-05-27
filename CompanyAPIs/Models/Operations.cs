@@ -11,6 +11,8 @@ namespace CompanyAPIs.Models
 
         [ForeignKey("ApplicationUser")]
         public string UserId { get; set; }
+
+        public string EmployeeUserId { get; set; }
         public string Name { get; set; }
         public string PortOfLoading { get; set; }
         public string PortOfDistance { get; set; }
@@ -22,6 +24,7 @@ namespace CompanyAPIs.Models
         public Guid? UpdatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public bool IsDeleted { get; set; }
+        public bool IsPaid { get; set; }
 
         public ApplicationUser ApplicationUser { get; set; }
 

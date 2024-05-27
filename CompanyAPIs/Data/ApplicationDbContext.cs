@@ -15,6 +15,7 @@ namespace CompanyAPIs.Data
         public DbSet<Operations> Operation { get; set; }
         public DbSet<Ships> Ship { get; set; }
         public DbSet<Documents> Document { get; set; }
+        public DbSet<OperationPayment> Operation_Payment { get; set; }
 
        
     }

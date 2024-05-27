@@ -15,6 +15,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using HRCom.Domain.Contracts.Interfaces.Services;
 using HRCom.Utilities.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +26,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<JWT>(options => builder.Configuration.GetSection("JWT").Bind(options));
 
 
-//Add Identity Roles 
+
+
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();   
 
@@ -42,7 +44,23 @@ builder.Services.Configure<DataProtectionTokenProviderOptions>(opts=>opts.TokenL
 
 builder.Services.AddScoped<IAuthService , AuthService>();
 builder.Services.AddScoped<IOperationsService , OperationService>();
+builder.Services.AddScoped<IDocumentsService, DocumentService>();
 builder.Services.AddScoped<IUserDataProvider , UserDataProvider>();
+
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+
+    builder.Services.AddCors(options =>
+    {
+        options.AddDefaultPolicy(builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+    });
+
 
 
 //Add Authentication
@@ -70,11 +88,14 @@ builder.Services.AddAuthentication(options =>
 
 
 
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //builder.Services.AddDbContext<DataContext>();
 var app = builder.Build();
+app.UseCors();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -86,10 +107,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 //Add Authentication before authorization
-
+//app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-
+//app.UseMvc();
 app.MapControllers();
 
 app.Run();

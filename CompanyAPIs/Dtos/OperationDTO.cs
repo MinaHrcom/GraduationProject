@@ -9,6 +9,7 @@ namespace CompanyAPIs.Dtos
 
         [Required(ErrorMessage = "{0}_IS_REQUIRED")]
         public string UserId { get; set; }
+        public string EmployeeId { get; set; }
 
         [Required(ErrorMessage = "{0}_IS_REQUIRED")]
         public string Name { get; set; }
@@ -34,6 +35,31 @@ namespace CompanyAPIs.Dtos
         public Guid? UpdatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public bool IsDeleted { get; set; }
+        public bool IsPaid { get; set; }
+
+        public Documents? Documents { get; set; }
+    }
+
+    public class Documents
+    {
+        public Guid? ID { get; set; }
+        [Required(ErrorMessage = "{0}_IS_REQUIRED")]
+
+        public Guid OperationID { get; set; }
+        [Required(ErrorMessage = "{0}_IS_REQUIRED")]
+
+        public string Name { get; set; }
+        [Required(ErrorMessage = "{0}_IS_REQUIRED")]
+
+        public int VoyageNumber { get; set; }
+        [Required(ErrorMessage = "{0}_IS_REQUIRED")]
+
+        public int ContainerNumber { get; set; }
+        public bool IsDeleted { get; set; }
+
+        public Guid ShipID { get; set; }
+
 
     }
+
 }

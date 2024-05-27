@@ -9,6 +9,7 @@ namespace CompanyAPIs.Services
 
         Task<OperationResult<bool>> DeleteOperation(Guid id);
         Task<OperationResult<OperationDTO>> GetOperation(Guid id);
+        Task<OperationResult<List<OperationDTO>>> GetUserOperations(Guid UserId);
 
     }
 }
