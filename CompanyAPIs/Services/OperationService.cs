@@ -5,6 +5,8 @@ using HRCom.Domain.BaseTypes;
 using HRCom.Domain.Contracts.Interfaces.Services;
 using HRCom.Domain.Localization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Operations;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualBasic;
@@ -189,7 +191,8 @@ namespace CompanyAPIs.Services
 
 
 
-        public async Task<OperationResult<List<OperationDTO>>> GetUserOperations(Guid UserId)
+
+    public async Task<OperationResult<List<OperationDTO>>> GetUserOperations(Guid UserId)
         {
             var operations = await _applicationDbContext.Operation
                                                  .Where(o => o.UserId == UserId.ToString() || o.EmployeeUserId == UserId.ToString())
@@ -249,6 +252,109 @@ namespace CompanyAPIs.Services
             };
 
         }
+
+        public async Task<IEnumerable<MonthlyProfitDto>> GetMonthlyProfitsAsync()
+        {
+
+            var monthlyProfits = await _applicationDbContext.Operation_Payment
+                .Where(op => !op.IsDeleted)
+                .GroupBy(op => new { op.CreatedAt.Year, op.CreatedAt.Month })
+                .Select(g => new MonthlyProfitDto
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    TotalProfit = g.Sum(op => op.PaymentValue),
+                    OperationCount = g.Count()  // New property to count the operations
+
+                })
+                .OrderBy(mp => mp.Year)
+                .ThenBy(mp => mp.Month)
+                .ToListAsync();
+
+            return monthlyProfits;
+        }
+
+
+
+        public async Task<IEnumerable<MonthlyProfitDto>> GetMonthlyProfitsByYearAsync(int year)
+        {
+            // Generate a list of all months for the specified year
+            var allMonths = GenerateAllMonths(year, year);
+
+            // Get the monthly profits for the specified year from the database
+            var monthlyProfits = await _applicationDbContext.Operation_Payment
+                .Where(op => !op.IsDeleted && op.CreatedAt.Year == year)
+                .GroupBy(op => new { op.CreatedAt.Year, op.CreatedAt.Month })
+                .Select(g => new MonthlyProfitDto
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    TotalProfit = g.Sum(op => op.PaymentValue),
+                    OperationCount = g.Count()
+                })
+                .ToListAsync();
+
+            // Perform a left join to include all months
+            var result = from m in allMonths
+                         join p in monthlyProfits
+                         on new { m.Year, m.Month } equals new { p.Year, p.Month } into gj
+                         from sub in gj.DefaultIfEmpty()
+                         select new MonthlyProfitDto
+                         {
+                             Year = m.Year,
+                             Month = m.Month,
+                             TotalProfit = sub?.TotalProfit ?? 0,
+                             OperationCount = sub?.OperationCount ?? 0
+                         };
+
+            return result.OrderBy(r => r.Year).ThenBy(r => r.Month).ToList();
+        }
+
+        private List<MonthlyProfitDto> GenerateAllMonths(int startYear, int endYear)
+        {
+            var allMonths = new List<MonthlyProfitDto>();
+            for (int year = startYear; year <= endYear; year++)
+            {
+                for (int month = 1; month <= 12; month++)
+                {
+                    allMonths.Add(new MonthlyProfitDto { Year = year, Month = month });
+                }
+            }
+            return allMonths;
+        }
+
+
+
+
+        public async Task<OperationResult<StatisticsDTO>> GetStatistics()
+        {
+            var EmployeeRoleId = await _applicationDbContext.Roles.Where(x=>x.Name == "EMPLOYEE").Select(x=>x.Id).FirstOrDefaultAsync();
+            var CientRoleId = await _applicationDbContext.Roles.Where(x=>x.Name == "user").Select(x => x.Id).FirstOrDefaultAsync();
+
+            var clientCount = await _applicationDbContext.UserRoles.CountAsync(u => u.RoleId == CientRoleId);
+            var EmployeeCount = await _applicationDbContext.UserRoles.CountAsync(u => u.RoleId == EmployeeRoleId);
+
+            var paidOperations = await _applicationDbContext.Operation.Where(x=> x.IsPaid == true).CountAsync();
+            var UnpaidOperations = await _applicationDbContext.Operation.Where(x=> x.IsPaid == false).CountAsync();
+
+
+            var StatisticsDTO = new StatisticsDTO
+            {
+                ClientsCount = clientCount,
+                EmployeeCount  = EmployeeCount,
+                UnPaidOperationCount = UnpaidOperations,
+                PaidOperationCount = paidOperations,
+
+            };
+            
+            return new OperationResult<StatisticsDTO>
+            {
+                Data = StatisticsDTO,
+                StatusCode = HttpStatusCode.OK
+            };
+
+        }
+
 
 
 

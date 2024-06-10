@@ -169,5 +169,55 @@ namespace CompanyAPIs.Controllers
         }
 
 
+
+        [HttpGet("monthly-profits")]
+        public async Task<IActionResult> GetMonthlyProfits([FromQuery] int year)
+        {
+            if (year <= 0)
+            {
+                return BadRequest("Invalid year specified.");
+            }
+
+            var monthlyProfits = await _operationService.GetMonthlyProfitsByYearAsync(year);
+            return Ok(monthlyProfits);
+        }
+
+        [HttpGet("Statistics")]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(DataResponse<StatisticsDTO>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> GetStatistics()
+        {
+            var result = await _operationService.GetStatistics();
+
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return Ok(new DataResponse<StatisticsDTO>
+                {
+                    Data = result.Data
+                });
+            }
+            else if (result.StatusCode == HttpStatusCode.NotFound)
+            {
+                return NotFound(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+            else
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Error = new Error
+                    {
+                        Message = result.ErrorMessageKey
+                    }
+                });
+            }
+        }
+
     }
 }

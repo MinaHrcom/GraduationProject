@@ -110,7 +110,8 @@ namespace CompanyAPIs.Services
             PaymentRequest = new Models.OperationPayment
             {
                     OperationID = model.OperationID,
-                    PaymentValue = model.PaymentValue
+                    PaymentValue = model.PaymentValue,
+                    CreatedAt = DateTime.Now,
             };
 
              _applicationDbContext.Operation_Payment.Add(PaymentRequest);
